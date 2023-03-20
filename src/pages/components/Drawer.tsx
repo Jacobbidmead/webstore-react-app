@@ -1,4 +1,5 @@
 import * as React from "react";
+import { FC } from "react";
 import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
@@ -68,7 +69,7 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   justifyContent: "flex-end",
 }));
 
-export default function PersistentDrawerLeft() {
+const PersistentDrawerLeft: FC = () => {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
@@ -139,12 +140,12 @@ export default function PersistentDrawerLeft() {
         <Divider />
         <List>
           <ListItem disablePadding>
-            <ListItemButton>
-              <ListItemText />
-            </ListItemButton>
+            <Link href="/Basket">Basket</Link>
           </ListItem>
         </List>
       </Drawer>
     </Box>
   );
-}
+};
+
+export default PersistentDrawerLeft;
