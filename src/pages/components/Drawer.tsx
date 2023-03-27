@@ -127,11 +127,12 @@ const PersistentDrawerLeft: FC = () => {
         </DrawerHeader>
         <Divider />
         <List>
-          <ListItem disablePadding>
+          <ListItem>
             <Link href="/Latest">
               <span>Latest</span>
             </Link>
           </ListItem>
+          <Divider />
 
           <Accordion className="accordian">
             <AccordionSummary
@@ -143,30 +144,83 @@ const PersistentDrawerLeft: FC = () => {
             </AccordionSummary>
             <AccordionDetails>
               <ListItem disablePadding>
-                <Link href="/Clothing">T-shirts</Link>
+                <Link href="/T-shirts">T-shirts</Link>
               </ListItem>
               <ListItem disablePadding>
-                <Link href="/Clothing">Hoodies</Link>
+                <Link href="/Hoodies">Hoodies</Link>
               </ListItem>{" "}
               <ListItem disablePadding>
-                <Link href="/Clothing">Jackets</Link>
+                <Link href="/Jackets">Jackets</Link>
               </ListItem>{" "}
               <ListItem disablePadding>
-                <Link href="/Clothing">Jeans & Trousers</Link>
+                <Link href="/Trousers">Jeans & Trousers</Link>
+              </ListItem>
+              <ListItem disablePadding>
+                <Link href="/Hats">Hats & Beanies</Link>
               </ListItem>
             </AccordionDetails>
           </Accordion>
 
-          <ListItem disablePadding>
-            <Link href="/Shoes">Shoes</Link>
-          </ListItem>
-          <ListItem disablePadding>
-            <Link href="/Skate">Skate</Link>
-          </ListItem>
+          <Accordion className="accordian">
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography>Brands</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <ListItem disablePadding>
+                <Link href="/Adidas">Adidas</Link>
+              </ListItem>
+              <ListItem disablePadding>
+                <Link href="/Palace">Palace</Link>
+              </ListItem>{" "}
+              <ListItem disablePadding>
+                <Link href="/Polar">Polar</Link>
+              </ListItem>{" "}
+              <ListItem disablePadding>
+                <Link href="/Nike">Nike</Link>
+              </ListItem>
+              <ListItem disablePadding>
+                <Link href="/BrainDead">BrainDead</Link>
+              </ListItem>
+              <ListItem disablePadding>
+                <Link href="/NorthFace">The North Face</Link>
+              </ListItem>
+              <ListItem disablePadding>
+                <Link href="/Solomon">Solomon</Link>
+              </ListItem>
+            </AccordionDetails>
+          </Accordion>
+
+          <Accordion className="accordian">
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography>Skate</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <ListItem disablePadding>
+                <Link href="/Decks">Decks</Link>
+              </ListItem>
+              <ListItem disablePadding>
+                <Link href="/Trucks">Trucks</Link>
+              </ListItem>{" "}
+              <ListItem disablePadding>
+                <Link href="/Wheels">Wheels</Link>
+              </ListItem>{" "}
+              <ListItem disablePadding>
+                <Link href="/Hardware">Hardware</Link>
+              </ListItem>
+            </AccordionDetails>
+          </Accordion>
         </List>
         <Divider />
         <List>
-          <ListItem disablePadding>
+          <ListItem>
             <Link href="/Basket">Basket</Link>
           </ListItem>
         </List>
