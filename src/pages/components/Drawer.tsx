@@ -20,7 +20,12 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Container from "@mui/material/Container";
-import HomeSwiper from ".//HomeSwiper";
+import mainImg from "@/imageData/mainImgData";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css/navigation";
+import { Navigation } from "swiper";
+
+import "swiper/css";
 
 const drawerWidth = 240;
 
@@ -238,7 +243,22 @@ const PersistentDrawerLeft: FC = () => {
                 justifyContent: "center",
               }}
             >
-              <HomeSwiper />
+              <Swiper
+                navigation={true}
+                modules={[Navigation]}
+                className="mySwiper"
+              >
+                {mainImg.map((el, i) => {
+                  return (
+                    <SwiperSlide key={i}>
+                      <img src={el} alt="" className="swiper-slide-image" />
+                    </SwiperSlide>
+                  );
+                })}
+              </Swiper>
+            </Box>
+            <Box>
+              <div>hello</div>
             </Box>
           </Container>
         </Main>

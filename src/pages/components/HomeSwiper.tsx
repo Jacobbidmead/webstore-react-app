@@ -8,16 +8,17 @@ import "swiper/css";
 const HomeSwiper = () => {
   return (
     <>
-      {" "}
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-        {mainImg.map((el, i) => {
-          return (
-            <SwiperSlide key={i}>
-              <img src={el} alt="" />
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
+      <div>
+        <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+          {mainImg.map((el, i) => {
+            return (
+              <SwiperSlide key={i}>
+                <img src={el} alt="" className="swiper-slide-image" />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </div>
     </>
   );
 };
