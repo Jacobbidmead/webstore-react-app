@@ -19,6 +19,7 @@ import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Container from "@mui/material/Container";
 
 const drawerWidth = 240;
 
@@ -84,148 +85,161 @@ const PersistentDrawerLeft: FC = () => {
   };
 
   return (
-    <Box sx={{ display: "flex" }}>
-      <CssBaseline />
-      <AppBar position="fixed" open={open}>
-        <Toolbar sx={{ backgroundColor: "black" }}>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerOpen}
-            edge="start"
-            sx={{ mr: 2, ...(open && { display: "none" }) }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" noWrap component="div">
-            Persistent drawer
-          </Typography>
-        </Toolbar>
-      </AppBar>
-      <Drawer
-        sx={{
-          width: drawerWidth,
-          flexShrink: 0,
-          "& .MuiDrawer-paper": {
+    <>
+      <Box sx={{ display: "flex" }}>
+        <CssBaseline />
+        <AppBar position="fixed" open={open}>
+          <Toolbar sx={{ backgroundColor: "black" }}>
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              onClick={handleDrawerOpen}
+              edge="start"
+              sx={{ mr: 2, ...(open && { display: "none" }) }}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Typography variant="h6" noWrap component="div">
+              Persistent drawer
+            </Typography>
+          </Toolbar>
+        </AppBar>
+        <Drawer
+          sx={{
             width: drawerWidth,
-            boxSizing: "border-box",
-            // backgroundColor: "red",
-          },
-        }}
-        variant="persistent"
-        anchor="left"
-        open={open}
-      >
-        <DrawerHeader>
-          <IconButton onClick={handleDrawerClose}>
-            {theme.direction === "ltr" ? (
-              <ChevronLeftIcon />
-            ) : (
-              <ChevronRightIcon />
-            )}
-          </IconButton>
-        </DrawerHeader>
-        <Divider />
-        <List>
-          <ListItem>
-            <Link href="/Latest">
-              <span>Latest</span>
-            </Link>
-          </ListItem>
+            flexShrink: 0,
+            "& .MuiDrawer-paper": {
+              width: drawerWidth,
+              boxSizing: "border-box",
+              // backgroundColor: "red",
+            },
+          }}
+          variant="persistent"
+          anchor="left"
+          open={open}
+        >
+          <DrawerHeader>
+            <IconButton onClick={handleDrawerClose}>
+              {theme.direction === "ltr" ? (
+                <ChevronLeftIcon />
+              ) : (
+                <ChevronRightIcon />
+              )}
+            </IconButton>
+          </DrawerHeader>
+
           <Divider />
+          <List>
+            <ListItem>
+              <Link href="/Latest">
+                <span>Latest</span>
+              </Link>
+            </ListItem>
+            <Divider />
 
-          <Accordion className="accordian">
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <Typography>Clothing</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <ListItem disablePadding>
-                <Link href="/T-shirts">T-shirts</Link>
-              </ListItem>
-              <ListItem disablePadding>
-                <Link href="/Hoodies">Hoodies</Link>
-              </ListItem>{" "}
-              <ListItem disablePadding>
-                <Link href="/Jackets">Jackets</Link>
-              </ListItem>{" "}
-              <ListItem disablePadding>
-                <Link href="/Trousers">Jeans & Trousers</Link>
-              </ListItem>
-              <ListItem disablePadding>
-                <Link href="/Hats">Hats & Beanies</Link>
-              </ListItem>
-            </AccordionDetails>
-          </Accordion>
+            <Accordion className="accordian">
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography>Clothing</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <ListItem disablePadding>
+                  <Link href="/T-shirts">T-shirts</Link>
+                </ListItem>
+                <ListItem disablePadding>
+                  <Link href="/Hoodies">Hoodies</Link>
+                </ListItem>{" "}
+                <ListItem disablePadding>
+                  <Link href="/Jackets">Jackets</Link>
+                </ListItem>{" "}
+                <ListItem disablePadding>
+                  <Link href="/Trousers">Jeans & Trousers</Link>
+                </ListItem>
+                <ListItem disablePadding>
+                  <Link href="/Hats">Hats & Beanies</Link>
+                </ListItem>
+              </AccordionDetails>
+            </Accordion>
 
-          <Accordion className="accordian">
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <Typography>Brands</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <ListItem disablePadding>
-                <Link href="/Adidas">Adidas</Link>
-              </ListItem>
-              <ListItem disablePadding>
-                <Link href="/Palace">Palace</Link>
-              </ListItem>{" "}
-              <ListItem disablePadding>
-                <Link href="/Polar">Polar</Link>
-              </ListItem>{" "}
-              <ListItem disablePadding>
-                <Link href="/Nike">Nike</Link>
-              </ListItem>
-              <ListItem disablePadding>
-                <Link href="/BrainDead">BrainDead</Link>
-              </ListItem>
-              <ListItem disablePadding>
-                <Link href="/NorthFace">The North Face</Link>
-              </ListItem>
-              <ListItem disablePadding>
-                <Link href="/Solomon">Solomon</Link>
-              </ListItem>
-            </AccordionDetails>
-          </Accordion>
+            <Accordion className="accordian">
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography>Brands</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <ListItem disablePadding>
+                  <Link href="/Adidas">Adidas</Link>
+                </ListItem>
+                <ListItem disablePadding>
+                  <Link href="/Palace">Palace</Link>
+                </ListItem>{" "}
+                <ListItem disablePadding>
+                  <Link href="/Polar">Polar</Link>
+                </ListItem>{" "}
+                <ListItem disablePadding>
+                  <Link href="/Nike">Nike</Link>
+                </ListItem>
+                <ListItem disablePadding>
+                  <Link href="/BrainDead">BrainDead</Link>
+                </ListItem>
+                <ListItem disablePadding>
+                  <Link href="/NorthFace">The North Face</Link>
+                </ListItem>
+                <ListItem disablePadding>
+                  <Link href="/Solomon">Solomon</Link>
+                </ListItem>
+              </AccordionDetails>
+            </Accordion>
 
-          <Accordion className="accordian">
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <Typography>Skate</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <ListItem disablePadding>
-                <Link href="/Decks">Decks</Link>
-              </ListItem>
-              <ListItem disablePadding>
-                <Link href="/Trucks">Trucks</Link>
-              </ListItem>{" "}
-              <ListItem disablePadding>
-                <Link href="/Wheels">Wheels</Link>
-              </ListItem>{" "}
-              <ListItem disablePadding>
-                <Link href="/Hardware">Hardware</Link>
-              </ListItem>
-            </AccordionDetails>
-          </Accordion>
-        </List>
-        <Divider />
-        <List>
-          <ListItem>
-            <Link href="/Basket">Basket</Link>
-          </ListItem>
-        </List>
-      </Drawer>
-    </Box>
+            <Accordion className="accordian">
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography>Skate</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <ListItem disablePadding>
+                  <Link href="/Decks">Decks</Link>
+                </ListItem>
+                <ListItem disablePadding>
+                  <Link href="/Trucks">Trucks</Link>
+                </ListItem>{" "}
+                <ListItem disablePadding>
+                  <Link href="/Wheels">Wheels</Link>
+                </ListItem>{" "}
+                <ListItem disablePadding>
+                  <Link href="/Hardware">Hardware</Link>
+                </ListItem>
+              </AccordionDetails>
+            </Accordion>
+          </List>
+          <Divider />
+          <List>
+            <ListItem>
+              <Link href="/Basket">Basket</Link>
+            </ListItem>
+          </List>
+        </Drawer>
+        <Main open={open}>
+          <Container>
+            <Box sx={{ marginTop: "100px" }}>
+              <img
+                src="https://cdn.shopify.com/s/files/1/1202/6102/files/mike-arnold-desktop-banner-1_3072x1280_crop_center.progressive.jpg?v=1677862335"
+                alt=""
+              />
+            </Box>
+          </Container>
+        </Main>
+      </Box>
+    </>
   );
 };
 
