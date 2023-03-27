@@ -20,6 +20,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Container from "@mui/material/Container";
+import HomeSwiper from ".//HomeSwiper";
 
 const drawerWidth = 240;
 
@@ -230,11 +231,14 @@ const PersistentDrawerLeft: FC = () => {
         </Drawer>
         <Main open={open}>
           <Container>
-            <Box sx={{ marginTop: "100px" }}>
-              <img
-                src="https://cdn.shopify.com/s/files/1/1202/6102/files/mike-arnold-desktop-banner-1_3072x1280_crop_center.progressive.jpg?v=1677862335"
-                alt=""
-              />
+            <Box
+              sx={{
+                marginTop: "100px",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <HomeSwiper />
             </Box>
           </Container>
         </Main>

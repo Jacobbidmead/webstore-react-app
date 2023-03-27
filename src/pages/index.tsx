@@ -1,10 +1,9 @@
-import TemporaryDrawer from "./components/Drawer";
-import MainPage from "./components/MainPage";
+import Drawer from "./components/Drawer";
 
 const Home = () => {
   return (
     <>
-      <TemporaryDrawer />
+      <Drawer />
     </>
   );
 };
