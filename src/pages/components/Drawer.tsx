@@ -14,9 +14,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
 import Link from "next/link";
+import Accordion from "@mui/material/Accordion";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const drawerWidth = 240;
 
@@ -107,6 +109,7 @@ const PersistentDrawerLeft: FC = () => {
           "& .MuiDrawer-paper": {
             width: drawerWidth,
             boxSizing: "border-box",
+            // backgroundColor: "red",
           },
         }}
         variant="persistent"
@@ -125,11 +128,35 @@ const PersistentDrawerLeft: FC = () => {
         <Divider />
         <List>
           <ListItem disablePadding>
-            <Link href="/Latest">Latest</Link>
+            <Link href="/Latest">
+              <span>Latest</span>
+            </Link>
           </ListItem>
-          <ListItem disablePadding>
-            <Link href="/Clothing">Clothing</Link>
-          </ListItem>
+
+          <Accordion className="accordian">
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography>Clothing</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <ListItem disablePadding>
+                <Link href="/Clothing">T-shirts</Link>
+              </ListItem>
+              <ListItem disablePadding>
+                <Link href="/Clothing">Hoodies</Link>
+              </ListItem>{" "}
+              <ListItem disablePadding>
+                <Link href="/Clothing">Jackets</Link>
+              </ListItem>{" "}
+              <ListItem disablePadding>
+                <Link href="/Clothing">Jeans & Trousers</Link>
+              </ListItem>
+            </AccordionDetails>
+          </Accordion>
+
           <ListItem disablePadding>
             <Link href="/Shoes">Shoes</Link>
           </ListItem>
