@@ -20,24 +20,7 @@ a {
 
 /* swiper */
 
-.swiper-button-next {
-  color: rgb(0, 0, 0) !important;
-}
-
-.swiper-button-prev {
-  color: rgb(0, 0, 0) !important;
-}
-
-.swiper-slide-image {
-  height: 30%;
+.image-slider {
   object-fit: cover;
   border-radius: 20px;
-}
-
-.swiper-slide {
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: inherit !important;
 }
