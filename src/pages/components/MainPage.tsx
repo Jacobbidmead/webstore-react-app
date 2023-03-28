@@ -10,7 +10,7 @@ const MainPage = () => {
           <span className="welcome-message">Welcome.</span>
         </div>
         <HomeSwiper images={mainImg} />
-        <div></div>
+        <div className="latest-container"></div>
       </div>
     </>
   );

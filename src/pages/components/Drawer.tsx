@@ -20,6 +20,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MainPage from "./MainPage";
+import TextField from "@mui/material/TextField";
 
 const drawerWidth = 240;
 
@@ -89,7 +90,9 @@ const PersistentDrawerLeft: FC = () => {
       <Box sx={{ display: "flex" }}>
         <CssBaseline />
         <AppBar position="fixed" open={open}>
-          <Toolbar sx={{ backgroundColor: "black" }}>
+          <Toolbar
+            sx={{ backgroundColor: "black", justifyContent: "space-between" }}
+          >
             <IconButton
               color="inherit"
               aria-label="open drawer"
@@ -99,9 +102,15 @@ const PersistentDrawerLeft: FC = () => {
             >
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6" noWrap component="div">
-              Persistent drawer
-            </Typography>
+            {/* <TextField
+              variant="outlined"
+              sx={{
+                backgroundColor: "white",
+                border: "none",
+                borderRadius: "40px",
+                height: " 45px",
+              }}
+            /> */}
           </Toolbar>
         </AppBar>
         <Drawer
