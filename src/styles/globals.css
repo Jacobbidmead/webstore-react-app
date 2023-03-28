@@ -29,7 +29,6 @@ a {
 .mainpage-container {
   display: grid;
   grid-template-rows: 0.5fr 0.5fr 0.2fr 1fr;
-  background-color: #dce6f6;
 }
 
 .latest-container {

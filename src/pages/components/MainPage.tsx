@@ -61,7 +61,7 @@ const MainPage = () => {
           <div className="latest-img-container">
             {" "}
             <img
-              src="https://cdn.shopify.com/s/files/1/1202/6102/products/polar-big-boy-jeans-light-blue-3_37c29c94-1093-4f50-bba3-1bded6772014_600x696_crop_center.progressive.jpg?v=1647261599"
+              src="https://cdn.shopify.com/s/files/1/2102/5145/products/norse-projects-anton-brushed-flannel-check-shirt-varsity-green-1_480x_crop_center.jpg?v=1666367106"
               alt=""
               className="latest-img"
             />
@@ -69,7 +69,7 @@ const MainPage = () => {
           <div className="latest-img-container">
             {" "}
             <img
-              src="https://cdn.shopify.com/s/files/1/1202/6102/products/polar-big-boy-jeans-light-blue-3_37c29c94-1093-4f50-bba3-1bded6772014_600x696_crop_center.progressive.jpg?v=1647261599"
+              src="https://cdn.shopify.com/s/files/1/2102/5145/products/norse-projects-twill-sports-cap-dark-navy-1_5ad3044e-eefc-4ffc-b11a-9c87eca41906_480x_crop_center.jpg?v=1629718580"
               alt=""
               className="latest-img"
             />
