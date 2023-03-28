@@ -14,6 +14,10 @@ a {
   text-decoration: none;
 }
 
+.welcome {
+  margin-top: 100px;
+}
+
 .mainpage-container {
   display: grid;
   grid-template-rows: 1fr 3fr 1fr;
@@ -22,10 +26,18 @@ a {
 /* swiper */
 
 .image-slider {
-  object-fit: cover;
   border-radius: 20px;
+  position: relative;
+  width: 800px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .swiper-img {
-  width: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background-size: contain;
+  background-image: cover;
 }
