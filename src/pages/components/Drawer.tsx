@@ -20,10 +20,8 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Container from "@mui/material/Container";
-import mainImg from "@/imageData/mainImgData";
 import Grid from "@mui/material/Grid"; // Grid version 1
-import Grid2 from "@mui/material/Unstable_Grid2"; // Grid version 2
-import HomeSwiper from "./HomeSwiper";
+import MainPage from "./MainPage";
 
 const drawerWidth = 240;
 
@@ -235,19 +233,7 @@ const PersistentDrawerLeft: FC = () => {
           </Drawer>
           <Main open={open}>
             <Container sx={{ position: "relative", width: "100%" }}>
-              <Grid item xs={12}>
-                <HomeSwiper images={mainImg} />
-              </Grid>
-              <Grid item xs={12}>
-                <Box>
-                  {/* <div>
-                    <img
-                      src="https://cdn.shopify.com/s/files/1/1202/6102/files/Jano_web_banner_2_3072x1280_crop_center.progressive.jpg?v=1679928876"
-                      alt=""
-                    />
-                  </div> */}
-                </Box>
-              </Grid>
+              <MainPage />
             </Container>
           </Main>
         </Box>

@@ -1,9 +1,5 @@
-import { ReactComponentElement, useState } from "react";
+import { useState } from "react";
 import mainImg from "@/imageData/mainImgData";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css/navigation";
-import { Navigation } from "swiper";
-import "swiper/css";
 
 interface ImageSliderProps {
   images: string[];
