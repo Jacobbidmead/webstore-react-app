@@ -6,7 +6,9 @@ const MainPage = () => {
   return (
     <>
       <div className="mainpage-container">
-        <div className="welcome">Welcome.</div>
+        <div className="welcome">
+          <span className="welcome-message">Welcome.</span>
+        </div>
         <HomeSwiper images={mainImg} />
         <div></div>
       </div>

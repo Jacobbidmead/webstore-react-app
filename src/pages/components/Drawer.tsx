@@ -19,8 +19,6 @@ import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid"; // Grid version 1
 import MainPage from "./MainPage";
 
 const drawerWidth = 240;
@@ -113,7 +111,7 @@ const PersistentDrawerLeft: FC = () => {
             "& .MuiDrawer-paper": {
               width: drawerWidth,
               boxSizing: "border-box",
-              // backgroundColor: "red",
+              // backgroundColor: "yellow",
             },
           }}
           variant="persistent"
@@ -230,7 +228,7 @@ const PersistentDrawerLeft: FC = () => {
             </ListItem>
           </List>
         </Drawer>
-        <Main open={open}>
+        <Main open={open} sx={{ padding: "0" }}>
           <MainPage />
         </Main>
       </Box>
