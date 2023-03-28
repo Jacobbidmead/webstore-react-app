@@ -5,9 +5,10 @@ import mainImg from "@/imageData/mainImgData";
 const MainPage = () => {
   return (
     <>
-      <div className="main-container">
+      <div className="mainpage-container">
         <div className="welcome"></div>
         <HomeSwiper images={mainImg} />
+        <div></div>
       </div>
     </>
   );

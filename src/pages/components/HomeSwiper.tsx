@@ -20,7 +20,11 @@ const HomeSwiper: React.FC<ImageSliderProps> = ({ images }) => {
 
   return (
     <div className="image-slider">
-      <img src={mainImg[currentImageIndex]} alt="slider" />
+      <img
+        src={mainImg[currentImageIndex]}
+        alt="slider"
+        className="swiper-img"
+      />
       <button onClick={previousImage}>Previous</button>
       <button onClick={nextImage}>Next</button>
     </div>
