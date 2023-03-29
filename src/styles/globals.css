@@ -85,6 +85,20 @@ a {
   object-fit: cover;
 }
 
+.salomon-xt-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 80px;
+}
+
+.salomon-xt-link {
+  background-color: lightpink;
+}
+
+.salomon-xt-img {
+  width: 100%;
+}
+
 @media screen and (max-width: 601px) {
   .image-slider {
     width: 100%;

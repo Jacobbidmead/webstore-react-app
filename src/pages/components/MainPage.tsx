@@ -75,14 +75,15 @@ const MainPage = () => {
             />
           </div>
         </div>
-        <div>
+        <div className="salomon-xt-container">
           <div>
             <img
               src="https://cdn.shopify.com/s/files/1/2102/5145/files/salomon-xt6-gtx-desktop-banner_1_1200x1800.jpg?v=1672992137"
               alt=""
+              className="salomon-xt-img"
             />
           </div>
-          <div>Salomon XT-6 - Shop now</div>
+          <div className="salomon-xt-link">Salomon XT-6 - Shop now</div>
         </div>
       </div>
     </>
