@@ -1,6 +1,5 @@
 
-{
-   "salomonProd": [
+     [
         {
         "id": 1,
         "name": "Salomon xt-6",
@@ -33,7 +32,7 @@
         "price": 150,
         "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/salomon-xt-6-shoes-laurel-wreath-lily-pad-desert-sage-1_480x_crop_center.jpg?v=1679649910"
         }
-        ]
+      ]
 
-}
+
 
