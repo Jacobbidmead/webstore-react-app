@@ -91,7 +91,10 @@ const PersistentDrawerLeft: FC = () => {
         <CssBaseline />
         <AppBar position="fixed" open={open}>
           <Toolbar
-            sx={{ backgroundColor: "black", justifyContent: "space-between" }}
+            sx={{
+              // backgroundColor: "#fbfbfbcc",
+              justifyContent: "space-between",
+            }}
           >
             <IconButton
               color="inherit"

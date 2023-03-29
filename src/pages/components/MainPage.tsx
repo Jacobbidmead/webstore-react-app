@@ -45,7 +45,7 @@ const MainPage = () => {
           </div>
           <div className="latest-img-container">
             <img
-              src="https://cdn.shopify.com/s/files/1/1202/6102/products/nike-sb-janoski-og_-shoes-alabaster-alabaster-chile-red-1_600x696_crop_center.progressive.jpg?v=1679483172"
+              src="https://cdn.shopify.com/s/files/1/1202/6102/products/polar-spiral-shirt-black-white-1_1300x1500_crop_center.progressive.jpg?v=1676295201"
               alt=""
               className="latest-img"
             />
@@ -74,6 +74,15 @@ const MainPage = () => {
               className="latest-img"
             />
           </div>
+        </div>
+        <div>
+          <div>
+            <img
+              src="https://cdn.shopify.com/s/files/1/2102/5145/files/salomon-xt6-gtx-desktop-banner_1_1200x1800.jpg?v=1672992137"
+              alt=""
+            />
+          </div>
+          <div>Salomon XT-6 - Shop now</div>
         </div>
       </div>
     </>

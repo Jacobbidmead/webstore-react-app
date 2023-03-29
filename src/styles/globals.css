@@ -14,10 +14,20 @@ a {
   text-decoration: none;
 }
 
+.MuiAppBar-root {
+  box-shadow: none;
+  background-color: rgba(203, 200, 193, 0.5);
+  box-shadow: none;
+}
+
+.MuiDrawer-root {
+  background-color: red;
+}
+
 .welcome {
   margin: 90px 20px 0px 20px;
   height: 300px;
-  background-color: #95cfef;
+  background-color: #a836ea;
   border-radius: 20px;
 }
 
@@ -29,6 +39,7 @@ a {
 .mainpage-container {
   display: grid;
   grid-template-rows: 0.5fr 0.5fr 0.2fr 1fr;
+  background-color: black;
 }
 
 .latest-container {
@@ -65,14 +76,13 @@ a {
   margin-left: auto;
   margin-right: auto;
   margin-top: 80px;
+  object-fit: cover;
 }
 
 .swiper-img {
-  display: block;
   max-width: 100%;
   height: auto;
-  background-size: contain;
-  background-image: cover;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 601px) {
