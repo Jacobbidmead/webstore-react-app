@@ -1,0 +1,39 @@
+
+{
+   "salomonProd": [
+        {
+        "id": 1,
+        "name": "Salomon xt-6",
+        "color": "Camel",
+        "size" : "",
+        "price": 150,
+        "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/andwanderxSalomonXT-6Shoes-1_480x_crop_center.jpg?v=1669296832"
+        }, 
+        {
+        "id": 2,
+        "name": "Salomon xt-6",
+        "color": "Black/Black/Phantom",
+        "size" : "",
+        "price": 150,
+        "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/salomon-xt-6-shoes-black-black-phantom-1_480x_crop_center.jpg?v=1626966103"
+        },
+        {
+        "id": 3,
+        "name": "Salomon xt-6",
+        "color": "White/White/Lunar Rock",
+        "size" : "",
+        "price": 150,
+        "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/salomon-xt-6-shoes-white-white-lunar-rock-1_480x_crop_center.jpg?v=1626966167"
+        },  
+        {
+        "id": 4,
+        "name": "Salomon xt-6",
+        "color": "Laurel Wreath/Lily Pad/Desert Sage",
+        "size" : "",
+        "price": 150,
+        "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/salomon-xt-6-shoes-laurel-wreath-lily-pad-desert-sage-1_480x_crop_center.jpg?v=1679649910"
+        }
+        ]
+
+}
+

@@ -1,8 +1,10 @@
 import { useState, FC } from "react";
 import HomeSwiper from "./HomeSwiper";
 import mainImg from "@/imageData/mainImgData";
+import Link from "next/link";
+import Salomon from "../Salomon";
 
-const MainPage = () => {
+const MainPage: FC = () => {
   return (
     <>
       <div className="mainpage-container">
@@ -83,7 +85,9 @@ const MainPage = () => {
               className="salomon-xt-img"
             />
           </div>
-          <div className="salomon-xt-link">Salomon XT-6 - Shop now</div>
+          <Link href="/Salomon" className="salomon-xt-link">
+            Salomon XT-6 - Shop now
+          </Link>
         </div>
       </div>
     </>
