@@ -158,7 +158,7 @@ const PersistentDrawerLeft: FC = () => {
               </AccordionSummary>
               <AccordionDetails>
                 <ListItem disablePadding>
-                  <Link href="/T-shirts">T-shirts</Link>
+                  <Link href="/T-shirts">T-shirts & Shirts</Link>
                 </ListItem>
                 <ListItem disablePadding>
                   <Link href="/Hoodies">Hoodies</Link>
@@ -171,6 +171,9 @@ const PersistentDrawerLeft: FC = () => {
                 </ListItem>
                 <ListItem disablePadding>
                   <Link href="/Hats">Hats & Beanies</Link>
+                </ListItem>
+                <ListItem disablePadding>
+                  <Link href="/Shoes">Shoes</Link>
                 </ListItem>
               </AccordionDetails>
             </Accordion>
@@ -197,13 +200,13 @@ const PersistentDrawerLeft: FC = () => {
                   <Link href="/Nike">Nike</Link>
                 </ListItem>
                 <ListItem disablePadding>
-                  <Link href="/BrainDead">BrainDead</Link>
+                  <Link href="/NorseProjects">Norse Projects</Link>
                 </ListItem>
                 <ListItem disablePadding>
-                  <Link href="/NorthFace">The North Face</Link>
+                  <Link href="/Alltimers">Alltimers</Link>
                 </ListItem>
                 <ListItem disablePadding>
-                  <Link href="/Solomon">Solomon</Link>
+                  <Link href="/Salomon">Salomon</Link>
                 </ListItem>
               </AccordionDetails>
             </Accordion>
