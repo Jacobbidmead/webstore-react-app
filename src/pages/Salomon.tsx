@@ -75,6 +75,7 @@ const Salomon: FC = () => {
                 {product.name} - {product.color} - {size} - ${product.price}
               </li>
             ))}
+            <div>Basket Total: {basketTotal}</div>
           </ul>
         </div>
       </div>
