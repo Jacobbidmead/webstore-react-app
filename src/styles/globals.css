@@ -113,6 +113,10 @@ a {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.product-image {
+  width: 100%;
+}
+
 /* Store pages */
 
 @media screen and (max-width: 601px) {

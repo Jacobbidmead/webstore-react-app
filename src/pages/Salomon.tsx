@@ -2,7 +2,7 @@ import { useState, FC } from "react";
 import salomonData from "../data/salomonProd.json";
 
 const Salomon: FC = () => {
-  console.log(salomonData);
+  
   return (
     <>
       <div className="store-main-container">
@@ -14,11 +14,17 @@ const Salomon: FC = () => {
           <div className="store-items-container">
             {salomonData.map((item) => (
               <div>
-                <img src={item.imgUrl} alt="" />
+                <img src={item.imgUrl} alt="" className="product-image"/>
                 <div>{item.name}</div>
                 <div>{item.color}</div>
                 <div>{item.price}</div>
-                <select>Size</select>
+                <select>
+                  <option value="7" >7</option>
+                  <option value="8"  >8</option>
+                  <option value="9" >9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                </select>
                 <button>add to basket</button>
               </div>
             ))}
