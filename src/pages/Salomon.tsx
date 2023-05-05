@@ -10,9 +10,14 @@ interface Product {
   imgUrl: string;
 }
 
+interface BasketItem {
+  product: Product;
+  size: string;
+}
+
 const Salomon: FC = () => {
   const [selectedSize, setSelectedSize] = useState("");
-  const [basket, setBasket] = useState([]);
+  const [basket, setBasket] = useState<BasketItem[]>([]);
   const [basketTotal, setBasketTotal] = useState(0);
 
   const addToBasket = (product: Product) => {
