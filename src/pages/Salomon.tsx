@@ -1,5 +1,6 @@
 import { useState, FC } from "react";
 import salomonData from "../data/salomonProd.json";
+import Basket from "./components/Basket";
 
 interface Product {
   id: number;
@@ -68,15 +69,7 @@ const Salomon: FC = () => {
           </div>
         </div>
         <div>
-          <h2>Basket</h2>
-          <ul>
-            {basket.map(({ product, size }, index) => (
-              <li key={index}>
-                {product.name} - {product.color} - {size} - ${product.price}
-              </li>
-            ))}
-            <div>Basket Total: {basketTotal}</div>
-          </ul>
+          <Basket basket={basket} setBasket={setBasket} />
         </div>
       </div>
     </>
