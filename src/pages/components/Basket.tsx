@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
 import salomonData from "../../data/salomonProd.json";
 
 interface Product {
@@ -18,6 +18,7 @@ interface BasketItem {
 interface Props {
   basket: BasketItem[];
   setBasket: React.Dispatch<React.SetStateAction<BasketItem[]>>;
+  removeFromBasket: (product: Product, size: string) => void;
 }
 
 const Basket: FC<Props> = ({ basket, setBasket }) => {
@@ -33,6 +34,9 @@ const Basket: FC<Props> = ({ basket, setBasket }) => {
         </li>
       ))}
       <div>Total: {totalPrice}</div>
+      <button onClick={() => removeFromBasket(item.product, item.size)}>
+        Delete
+      </button>
     </div>
   );
 };

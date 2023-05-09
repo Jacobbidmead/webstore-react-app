@@ -20,6 +20,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MainPage from "./MainPage";
+import Basket from "./Basket";
 
 const drawerWidth = 240;
 
@@ -210,37 +211,8 @@ const PersistentDrawerLeft: FC = () => {
                 </ListItem>
               </AccordionDetails>
             </Accordion>
-
-            <Accordion className="accordian">
-              <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel1a-content"
-                id="panel1a-header"
-              >
-                <Typography>Skate</Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <ListItem disablePadding>
-                  <Link href="/Decks">Decks</Link>
-                </ListItem>
-                <ListItem disablePadding>
-                  <Link href="/Trucks">Trucks</Link>
-                </ListItem>{" "}
-                <ListItem disablePadding>
-                  <Link href="/Wheels">Wheels</Link>
-                </ListItem>{" "}
-                <ListItem disablePadding>
-                  <Link href="/Hardware">Hardware</Link>
-                </ListItem>
-              </AccordionDetails>
-            </Accordion>
           </List>
           <Divider />
-          <List>
-            <ListItem>
-              <Link href="/Basket">Basket</Link>
-            </ListItem>
-          </List>
         </Drawer>
         <Main open={open} sx={{ padding: "0" }}>
           <MainPage />

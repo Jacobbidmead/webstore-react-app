@@ -1,5 +1,5 @@
-import { useState, useEffect, FC } from "react";
-import salomonData from "../data/salomonProd.json";
+import { useState, FC } from "react";
+import norseProjectsData from "../data/norseprojectsProd.json";
 import Basket from "./components/Basket";
 
 interface Product {
@@ -17,7 +17,7 @@ interface BasketItem {
   size: string;
 }
 
-const Salomon: FC = () => {
+const NorseProjects: FC = () => {
   const [selectedSize, setSelectedSize] = useState("");
   const [basket, setBasket] = useState<BasketItem[]>([]);
   const [basketTotal, setBasketTotal] = useState(0);
@@ -30,25 +30,14 @@ const Salomon: FC = () => {
     }
   };
 
-  const removeFromBasket = (index: number) => {
-    const newBasket = [...basket];
-    const removedItem = newBasket.splice(index, 1);
-    setBasket(newBasket);
-    setBasketTotal(basketTotal - removedItem[0].product.price);
-  };
-
   return (
     <>
       <div>
-        <Basket
-          basket={basket}
-          setBasket={setBasket}
-          removeFromBasket={removeFromBasket}
-        />
+        <Basket basket={basket} setBasket={setBasket} />
       </div>
       <div className="store-main-container">
         <div className="store-brand-info">
-          <h1>Salomon</h1>
+          <h1>Norse Projects</h1>
         </div>
         <div>
           The Salomon XT-6 trainers are high-performance shoes designed for
@@ -67,7 +56,7 @@ const Salomon: FC = () => {
         </div>
         <div>
           <div className="store-items-container">
-            {salomonData.map((item) => (
+            {norseProjectsData.map((item) => (
               <div key={item.id}>
                 <img src={item.imgUrl} alt="" className="product-image" />
                 <div>{item.name}</div>
@@ -102,4 +91,4 @@ const Salomon: FC = () => {
   );
 };
 
-export default Salomon;
+export default NorseProjects;
