@@ -20,7 +20,6 @@ interface BasketItem {
 const Salomon: FC = () => {
   const [selectedSize, setSelectedSize] = useState("");
   const [basket, setBasket] = useState<BasketItem[]>([]);
-  const [basketTotal, setBasketTotal] = useState(0);
 
   useEffect(() => {
     const storedBasket = localStorage.getItem("basket");
@@ -35,17 +34,20 @@ const Salomon: FC = () => {
 
   const addToBasket = (product: Product) => {
     if (selectedSize !== "") {
-      setBasket([...basket, { product, size: selectedSize }]);
+      const newItem = { product, size: selectedSize };
+      setBasket((prevBasket) => [...prevBasket, newItem]);
       setSelectedSize("");
     }
   };
 
   const removeFromBasket = (productId: number) => {
-    const itemToRemove = basket.find((item) => item.product.id === productId);
-    if (itemToRemove) {
-      setBasketTotal(basketTotal - itemToRemove.product.price);
-      setBasket(basket.filter((item) => item.product.id !== productId));
-    }
+    setBasket((prevBasket) =>
+      prevBasket.filter((item) => item.product.id !== productId)
+    );
+  };
+
+  const getTotalPrice = () => {
+    return basket.reduce((total, item) => total + item.product.price, 0);
   };
 
   return (
