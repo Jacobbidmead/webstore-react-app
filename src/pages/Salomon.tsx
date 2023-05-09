@@ -22,19 +22,30 @@ const Salomon: FC = () => {
   const [basket, setBasket] = useState<BasketItem[]>([]);
   const [basketTotal, setBasketTotal] = useState(0);
 
+  useEffect(() => {
+    const storedBasket = localStorage.getItem("basket");
+    if (storedBasket) {
+      setBasket(JSON.parse(storedBasket));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("basket", JSON.stringify(basket));
+  }, [basket]);
+
   const addToBasket = (product: Product) => {
     if (selectedSize !== "") {
       setBasket([...basket, { product, size: selectedSize }]);
-      setBasketTotal(basketTotal + product.price);
       setSelectedSize("");
     }
   };
 
-  const removeFromBasket = (index: number) => {
-    const newBasket = [...basket];
-    const removedItem = newBasket.splice(index, 1);
-    setBasket(newBasket);
-    setBasketTotal(basketTotal - removedItem[0].product.price);
+  const removeFromBasket = (productId: number) => {
+    const itemToRemove = basket.find((item) => item.product.id === productId);
+    if (itemToRemove) {
+      setBasketTotal(basketTotal - itemToRemove.product.price);
+      setBasket(basket.filter((item) => item.product.id !== productId));
+    }
   };
 
   return (
@@ -43,7 +54,7 @@ const Salomon: FC = () => {
         <Basket
           basket={basket}
           setBasket={setBasket}
-          removeFromBasket={removeFromBasket}
+          removeFromBasket={(index) => removeFromBasket(index)}
         />
       </div>
       <div className="store-main-container">

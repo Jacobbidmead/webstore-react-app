@@ -1,5 +1,4 @@
-import { FC, useEffect, useState } from "react";
-import salomonData from "../../data/salomonProd.json";
+import { FC, useEffect } from "react";
 
 interface Product {
   id: number;
@@ -17,12 +16,20 @@ interface BasketItem {
 
 interface Props {
   basket: BasketItem[];
-  setBasket: React.Dispatch<React.SetStateAction<BasketItem[]>>;
-  removeFromBasket: (product: Product, size: string) => void;
+  setBasket: (basket: BasketItem[]) => void;
+  removeFromBasket: (productId: number) => void;
 }
 
-const Basket: FC<Props> = ({ basket, setBasket }) => {
+const Basket: FC<Props> = ({ basket, setBasket, removeFromBasket }) => {
   const totalPrice = basket.reduce((acc, item) => acc + item.product.price, 0);
+
+  useEffect(() => {
+    localStorage.setItem("basket", JSON.stringify(basket));
+  }, [basket]);
+
+  const handleRemoveFromBasket = (productId: number) => {
+    removeFromBasket(productId);
+  };
 
   return (
     <div>
@@ -31,12 +38,12 @@ const Basket: FC<Props> = ({ basket, setBasket }) => {
         <li key={index}>
           {item.product.name} - {item.product.color} - {item.size} - $
           {item.product.price}
+          <button onClick={() => handleRemoveFromBasket(item.product.id)}>
+            Delete
+          </button>
         </li>
       ))}
       <div>Total: {totalPrice}</div>
-      <button onClick={() => removeFromBasket(item.product, item.size)}>
-        Delete
-      </button>
     </div>
   );
 };
