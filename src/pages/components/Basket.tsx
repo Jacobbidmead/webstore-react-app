@@ -16,20 +16,17 @@ interface BasketItem {
 
 interface Props {
   basket: BasketItem[];
-  setBasket: (basket: BasketItem[]) => void;
-  removeFromBasket: (productId: number) => void;
+  setBasket: React.Dispatch<React.SetStateAction<BasketItem[]>>;
 }
 
-const Basket: FC<Props> = ({ basket, setBasket, removeFromBasket }) => {
-  const totalPrice = basket.reduce((acc, item) => acc + item.product.price, 0);
-
-  useEffect(() => {
-    localStorage.setItem("basket", JSON.stringify(basket));
-  }, [basket]);
-
-  const handleRemoveFromBasket = (productId: number) => {
-    removeFromBasket(productId);
+const Basket: FC<Props> = ({ basket, setBasket }) => {
+  const removeFromBasket = (productId: number) => {
+    setBasket((prevBasket) =>
+      prevBasket.filter((item) => item.product.id !== productId)
+    );
   };
+
+  const totalPrice = basket.reduce((acc, item) => acc + item.product.price, 0);
 
   return (
     <div>
@@ -38,7 +35,7 @@ const Basket: FC<Props> = ({ basket, setBasket, removeFromBasket }) => {
         <li key={index}>
           {item.product.name} - {item.product.color} - {item.size} - $
           {item.product.price}
-          <button onClick={() => handleRemoveFromBasket(item.product.id)}>
+          <button onClick={() => removeFromBasket(item.product.id)}>
             Delete
           </button>
         </li>
@@ -47,5 +44,4 @@ const Basket: FC<Props> = ({ basket, setBasket, removeFromBasket }) => {
     </div>
   );
 };
-
 export default Basket;

@@ -24,12 +24,20 @@ const Salomon: FC = () => {
   useEffect(() => {
     const storedBasket = localStorage.getItem("basket");
     if (storedBasket) {
-      setBasket(JSON.parse(storedBasket));
+      const productIds = JSON.parse(storedBasket) as number[];
+      const items = productIds
+        .map((id) => {
+          const product = salomonData.find((item) => item.id === id);
+          return product ? { product, size: "" } : null;
+        })
+        .filter(Boolean) as BasketItem[];
+      setBasket(items);
     }
   }, []);
 
   useEffect(() => {
-    localStorage.setItem("basket", JSON.stringify(basket));
+    const productIds = basket.map((item) => item.product.id);
+    localStorage.setItem("basket", JSON.stringify(productIds));
   }, [basket]);
 
   const addToBasket = (product: Product) => {
@@ -53,11 +61,7 @@ const Salomon: FC = () => {
   return (
     <>
       <div>
-        <Basket
-          basket={basket}
-          setBasket={setBasket}
-          removeFromBasket={(index) => removeFromBasket(index)}
-        />
+        <Basket basket={basket} setBasket={setBasket} />
       </div>
       <div className="store-main-container">
         <div className="store-brand-info">
