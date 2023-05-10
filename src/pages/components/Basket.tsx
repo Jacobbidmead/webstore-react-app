@@ -33,9 +33,7 @@ const Basket: FC<Props> = ({ basket, setBasket }) => {
           <button onClick={() => removeFromBasket(item)}>Delete</button>
         </li>
       ))}
-      <div>
-        Total: {basket.reduce((acc, item) => acc + item.product.price, 0)}
-      </div>
+      <div>Total: {totalPrice}</div>
     </div>
   );
 };

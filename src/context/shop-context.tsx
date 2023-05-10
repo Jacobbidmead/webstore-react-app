@@ -1,7 +1,5 @@
 import React, { createContext, FC, useState, useEffect } from "react";
 
-export const ShopContext = createContext<ShopContextValue | null>(null);
-
 interface Product {
   id: number;
   type: string;
@@ -12,34 +10,54 @@ interface Product {
   imgUrl: string;
 }
 
-interface ShopContextValue {
-  basket: BasketItem[];
-  addToBasket: (product: Product) => void;
-  removeFromBasket: (item: BasketItem) => void;
-  totalPrice: number;
-}
-
 interface BasketItem {
   product: Product;
   size: string;
 }
 
-const BASKET_STORAGE_KEY = "myapp_basket";
+interface ShopContextValue {
+  basket: BasketItem[];
+  addToBasket: (product: Product) => void;
+  removeFromBasket: (item: BasketItem) => void;
+  totalPrice: number;
+  setSelectedSize: React.Dispatch<React.SetStateAction<string>>;
+}
+
+export const ShopContext = createContext<ShopContextValue | null>(null);
 
 export const ShopContextProvider: FC<React.PropsWithChildren<{}>> = (props) => {
   const [basket, setBasket] = useState<BasketItem[]>([]);
   const [selectedSize, setSelectedSize] = useState("");
+  const [hasInitialized, setHasInitialized] = useState(false);
 
+  // Load basket from local storage
   useEffect(() => {
-    const storedBasket = localStorage.getItem(BASKET_STORAGE_KEY);
-    if (storedBasket) {
-      setBasket(JSON.parse(storedBasket));
+    const loadedBasket = localStorage.getItem("basket");
+    if (loadedBasket) {
+      try {
+        const parsedBasket = JSON.parse(loadedBasket);
+        console.log("Loaded basket from local storage:", parsedBasket);
+        setBasket(parsedBasket);
+      } catch (err) {
+        console.error("Failed to parse basket from local storage:", err);
+      }
     }
+    setHasInitialized(true); // Mark as initialized after first load
   }, []);
 
+  // Save basket to local storage whenever it changes
   useEffect(() => {
-    localStorage.setItem(BASKET_STORAGE_KEY, JSON.stringify(basket));
-  }, [basket]);
+    if (hasInitialized) {
+      // Only save if we have loaded at least once
+      try {
+        const basketString = JSON.stringify(basket);
+        console.log("Saving basket to local storage:", basket);
+        localStorage.setItem("basket", basketString);
+      } catch (err) {
+        console.error("Failed to save basket to local storage:", err);
+      }
+    }
+  }, [basket, hasInitialized]);
 
   const addToBasket = (product: Product) => {
     if (selectedSize !== "") {
@@ -56,7 +74,13 @@ export const ShopContextProvider: FC<React.PropsWithChildren<{}>> = (props) => {
   };
 
   const totalPrice = basket.reduce((acc, item) => acc + item.product.price, 0);
-  const contextValue = { basket, addToBasket, removeFromBasket, totalPrice };
+  const contextValue = {
+    basket,
+    addToBasket,
+    removeFromBasket,
+    totalPrice,
+    setSelectedSize,
+  };
 
   return (
     <ShopContext.Provider value={contextValue}>

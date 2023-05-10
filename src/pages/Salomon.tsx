@@ -59,7 +59,6 @@ const Salomon: FC = () => {
                   <select
                     value={selectedSize}
                     onChange={(event) => {
-                      setSelectedSizeLocal(event.target.value);
                       setSelectedSize(event.target.value);
                     }}
                   >
