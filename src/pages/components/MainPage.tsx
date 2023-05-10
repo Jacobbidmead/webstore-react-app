@@ -2,7 +2,6 @@ import { useState, FC } from "react";
 import HomeSwiper from "./HomeSwiper";
 import mainImg from "@/imageData/mainImgData";
 import Link from "next/link";
-import Salomon from "../Salomon";
 
 const MainPage: FC = () => {
   return (

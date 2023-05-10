@@ -1,4 +1,4 @@
-import { useState, useEffect, FC } from "react";
+import { FC, useContext, useState } from "react";
 import salomonData from "../data/salomonProd.json";
 import Basket from "./components/Basket";
 import { ShopContext } from "@/context/shop-context";
@@ -13,51 +13,11 @@ interface Product {
   imgUrl: string;
 }
 
-interface BasketItem {
-  product: Product;
-  size: string;
-}
-
 const Salomon: FC = () => {
-  // const [selectedSize, setSelectedSize] = useState("");
-  // const [basket, setBasket] = useState<BasketItem[]>([]);
+  const { addToBasket, setSelectedSize, basket, setBasket } =
+    useContext(ShopContext);
 
-  // useEffect(() => {
-  //   const storedBasket = localStorage.getItem("basket");
-  //   if (storedBasket) {
-  //     const productIds = JSON.parse(storedBasket) as number[];
-  //     const items = productIds
-  //       .map((id) => {
-  //         const product = salomonData.find((item) => item.id === id);
-  //         return product ? { product, size: "" } : null;
-  //       })
-  //       .filter(Boolean) as BasketItem[];
-  //     setBasket(items);
-  //   }
-  // }, []);
-
-  // useEffect(() => {
-  //   const productIds = basket.map((item) => item.product.id);
-  //   localStorage.setItem("basket", JSON.stringify(productIds));
-  // }, [basket]);
-
-  // const addToBasket = (product: Product) => {
-  //   if (selectedSize !== "") {
-  //     const newItem = { product, size: selectedSize };
-  //     setBasket((prevBasket) => [...prevBasket, newItem]);
-  //     setSelectedSize("");
-  //   }
-  // };
-
-  // const removeFromBasket = (productId: number) => {
-  //   setBasket((prevBasket) =>
-  //     prevBasket.filter((item) => item.product.id !== productId)
-  //   );
-  // };
-
-  // const getTotalPrice = () => {
-  //   return basket.reduce((total, item) => total + item.product.price, 0);
-  // };
+  const [selectedSize, setSelectedSizeLocal] = useState("");
 
   return (
     <>
@@ -98,7 +58,10 @@ const Salomon: FC = () => {
                 >
                   <select
                     value={selectedSize}
-                    onChange={(event) => setSelectedSize(event.target.value)}
+                    onChange={(event) => {
+                      setSelectedSizeLocal(event.target.value);
+                      setSelectedSize(event.target.value);
+                    }}
                   >
                     <option value="">Select a size</option>
                     {item.size.map((size, index) => (

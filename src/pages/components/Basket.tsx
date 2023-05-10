@@ -1,4 +1,5 @@
-import { FC, useEffect } from "react";
+import { FC, useContext } from "react";
+import { ShopContext } from "@/context/shop-context";
 
 interface Product {
   id: number;
@@ -14,19 +15,13 @@ interface BasketItem {
   size: string;
 }
 
-interface Props {
+export interface Props {
   basket: BasketItem[];
   setBasket: React.Dispatch<React.SetStateAction<BasketItem[]>>;
 }
 
 const Basket: FC<Props> = ({ basket, setBasket }) => {
-  const removeFromBasket = (productId: number) => {
-    setBasket((prevBasket) =>
-      prevBasket.filter((item) => item.product.id !== productId)
-    );
-  };
-
-  const totalPrice = basket.reduce((acc, item) => acc + item.product.price, 0);
+  const { removeFromBasket, totalPrice } = useContext(ShopContext);
 
   return (
     <div>
@@ -40,8 +35,11 @@ const Basket: FC<Props> = ({ basket, setBasket }) => {
           </button>
         </li>
       ))}
-      <div>Total: {totalPrice}</div>
+      <div>
+        Total: {basket.reduce((acc, item) => acc + item.product.price, 0)}
+      </div>
     </div>
   );
 };
+
 export default Basket;

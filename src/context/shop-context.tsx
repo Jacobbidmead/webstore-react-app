@@ -1,7 +1,5 @@
 import React, { createContext, FC, useState } from "react";
 
-export const ShopContext = createContext<ShopContextValue | null>(null);
-
 interface Product {
   id: number;
   type: string;
@@ -17,12 +15,16 @@ interface ShopContextValue {
   addToBasket: (product: Product) => void;
   removeFromBasket: (productId: number) => void;
   totalPrice: number;
+  selectedSize: string;
+  setSelectedSize: React.Dispatch<React.SetStateAction<string>>;
 }
 
 interface BasketItem {
   product: Product;
   size: string;
 }
+
+export const ShopContext = createContext<ShopContextValue | null>(null);
 
 export const ShopContextProvider: FC<React.PropsWithChildren<{}>> = (props) => {
   const [basket, setBasket] = useState<BasketItem[]>([]);
@@ -43,7 +45,14 @@ export const ShopContextProvider: FC<React.PropsWithChildren<{}>> = (props) => {
   };
 
   const totalPrice = basket.reduce((acc, item) => acc + item.product.price, 0);
-  const contextValue = { basket, addToBasket, removeFromBasket, totalPrice };
+  const contextValue = {
+    basket,
+    addToBasket,
+    removeFromBasket,
+    totalPrice,
+    selectedSize,
+    setSelectedSize,
+  };
 
   return (
     <ShopContext.Provider value={contextValue}>
