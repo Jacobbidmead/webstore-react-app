@@ -1,6 +1,7 @@
 import { useState, useEffect, FC } from "react";
 import salomonData from "../data/salomonProd.json";
 import Basket from "./components/Basket";
+import { ShopContext } from "@/context/shop-context";
 
 interface Product {
   id: number;
@@ -21,24 +22,24 @@ const Salomon: FC = () => {
   // const [selectedSize, setSelectedSize] = useState("");
   // const [basket, setBasket] = useState<BasketItem[]>([]);
 
-  useEffect(() => {
-    const storedBasket = localStorage.getItem("basket");
-    if (storedBasket) {
-      const productIds = JSON.parse(storedBasket) as number[];
-      const items = productIds
-        .map((id) => {
-          const product = salomonData.find((item) => item.id === id);
-          return product ? { product, size: "" } : null;
-        })
-        .filter(Boolean) as BasketItem[];
-      setBasket(items);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const storedBasket = localStorage.getItem("basket");
+  //   if (storedBasket) {
+  //     const productIds = JSON.parse(storedBasket) as number[];
+  //     const items = productIds
+  //       .map((id) => {
+  //         const product = salomonData.find((item) => item.id === id);
+  //         return product ? { product, size: "" } : null;
+  //       })
+  //       .filter(Boolean) as BasketItem[];
+  //     setBasket(items);
+  //   }
+  // }, []);
 
-  useEffect(() => {
-    const productIds = basket.map((item) => item.product.id);
-    localStorage.setItem("basket", JSON.stringify(productIds));
-  }, [basket]);
+  // useEffect(() => {
+  //   const productIds = basket.map((item) => item.product.id);
+  //   localStorage.setItem("basket", JSON.stringify(productIds));
+  // }, [basket]);
 
   // const addToBasket = (product: Product) => {
   //   if (selectedSize !== "") {
