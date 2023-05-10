@@ -1,4 +1,6 @@
-import React, { createContext, FC, useState } from "react";
+import React, { createContext, FC, useState, useEffect } from "react";
+
+export const ShopContext = createContext<ShopContextValue | null>(null);
 
 interface Product {
   id: number;
@@ -13,10 +15,8 @@ interface Product {
 interface ShopContextValue {
   basket: BasketItem[];
   addToBasket: (product: Product) => void;
-  removeFromBasket: (productId: number) => void;
+  removeFromBasket: (item: BasketItem) => void;
   totalPrice: number;
-  selectedSize: string;
-  setSelectedSize: React.Dispatch<React.SetStateAction<string>>;
 }
 
 interface BasketItem {
@@ -24,11 +24,22 @@ interface BasketItem {
   size: string;
 }
 
-export const ShopContext = createContext<ShopContextValue | null>(null);
+const BASKET_STORAGE_KEY = "myapp_basket";
 
 export const ShopContextProvider: FC<React.PropsWithChildren<{}>> = (props) => {
   const [basket, setBasket] = useState<BasketItem[]>([]);
   const [selectedSize, setSelectedSize] = useState("");
+
+  useEffect(() => {
+    const storedBasket = localStorage.getItem(BASKET_STORAGE_KEY);
+    if (storedBasket) {
+      setBasket(JSON.parse(storedBasket));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem(BASKET_STORAGE_KEY, JSON.stringify(basket));
+  }, [basket]);
 
   const addToBasket = (product: Product) => {
     if (selectedSize !== "") {
@@ -38,21 +49,14 @@ export const ShopContextProvider: FC<React.PropsWithChildren<{}>> = (props) => {
     }
   };
 
-  const removeFromBasket = (productId: number) => {
+  const removeFromBasket = (item: BasketItem) => {
     setBasket((prevBasket) =>
-      prevBasket.filter((item) => item.product.id !== productId)
+      prevBasket.filter((basketItem) => basketItem !== item)
     );
   };
 
   const totalPrice = basket.reduce((acc, item) => acc + item.product.price, 0);
-  const contextValue = {
-    basket,
-    addToBasket,
-    removeFromBasket,
-    totalPrice,
-    selectedSize,
-    setSelectedSize,
-  };
+  const contextValue = { basket, addToBasket, removeFromBasket, totalPrice };
 
   return (
     <ShopContext.Provider value={contextValue}>

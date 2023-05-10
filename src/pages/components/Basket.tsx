@@ -30,9 +30,7 @@ const Basket: FC<Props> = ({ basket, setBasket }) => {
         <li key={index}>
           {item.product.name} - {item.product.color} - {item.size} - $
           {item.product.price}
-          <button onClick={() => removeFromBasket(item.product.id)}>
-            Delete
-          </button>
+          <button onClick={() => removeFromBasket(item)}>Delete</button>
         </li>
       ))}
       <div>
