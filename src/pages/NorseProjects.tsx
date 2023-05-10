@@ -1,6 +1,7 @@
-import { useState, FC } from "react";
+import { useState, FC, useContext } from "react";
 import norseProjectsData from "../data/norseprojectsProd.json";
 import Basket from "./components/Basket";
+import { ShopContext } from "@/context/shop-context";
 
 interface Product {
   id: number;
@@ -18,17 +19,10 @@ interface BasketItem {
 }
 
 const NorseProjects: FC = () => {
-  const [selectedSize, setSelectedSize] = useState("");
-  const [basket, setBasket] = useState<BasketItem[]>([]);
-  const [basketTotal, setBasketTotal] = useState(0);
+  const { addToBasket, setSelectedSize, basket, setBasket } =
+    useContext(ShopContext);
 
-  const addToBasket = (product: Product) => {
-    if (selectedSize !== "") {
-      setBasket([...basket, { product, size: selectedSize }]);
-      setBasketTotal(basketTotal + product.price);
-      setSelectedSize("");
-    }
-  };
+  const [selectedSize, setSelectedSizeLocal] = useState("");
 
   return (
     <>
@@ -39,21 +33,7 @@ const NorseProjects: FC = () => {
         <div className="store-brand-info">
           <h1>Norse Projects</h1>
         </div>
-        <div>
-          The Salomon XT-6 trainers are high-performance shoes designed for
-          trail running and outdoor activities. They feature a breathable mesh
-          and synthetic upper with Sensifit™ technology and a Quicklace™ system
-          for a comfortable and secure fit. The Contagrip® outsole with chevron
-          lugs provides excellent traction on any terrain, while the
-          EnergyCell™+ foam in the midsole offers cushioning and energy return
-          to reduce fatigue during long runs or hikes. These shoes also have
-          protective features, including a toecap and mudguard, a gusseted
-          tongue to keep out debris, and a reinforced heel for added support and
-          stability. With their advanced technology and durable construction,
-          the Salomon XT-6 trainers are an excellent choice for anyone looking
-          for a high-performance trail running shoe that will help them tackle
-          any terrain with confidence and ease.
-        </div>
+        <div>Norse Projects description</div>
         <div>
           <div className="store-items-container">
             {norseProjectsData.map((item) => (

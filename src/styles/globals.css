@@ -22,10 +22,6 @@ a {
   box-shadow: none;
 }
 
-.MuiDrawer-root {
-  background-color: red;
-}
-
 .welcome {
   margin: 90px 20px 0px 20px;
   height: 300px;
@@ -41,7 +37,7 @@ a {
 .mainpage-container {
   display: grid;
   grid-template-rows: 0.5fr 0.5fr 0.2fr 1fr;
-  background-color: black;
+  /* background-color: black; */
 }
 
 .latest-container {
@@ -64,7 +60,7 @@ a {
 .latest-header {
   text-align: center;
   background-color: #f6a37c;
-  margin: 40px 20px 60px 20px;
+  margin: 40px 20px 0px 20px;
   height: 200px;
   border-radius: 20px;
 }
@@ -120,7 +116,7 @@ a {
 /* Basket */
 
 .basket-container {
-  color: white;
+  color: red;
   padding-top: 80px;
 }
 
