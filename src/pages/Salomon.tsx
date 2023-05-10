@@ -18,8 +18,8 @@ interface BasketItem {
 }
 
 const Salomon: FC = () => {
-  const [selectedSize, setSelectedSize] = useState("");
-  const [basket, setBasket] = useState<BasketItem[]>([]);
+  // const [selectedSize, setSelectedSize] = useState("");
+  // const [basket, setBasket] = useState<BasketItem[]>([]);
 
   useEffect(() => {
     const storedBasket = localStorage.getItem("basket");
@@ -40,23 +40,23 @@ const Salomon: FC = () => {
     localStorage.setItem("basket", JSON.stringify(productIds));
   }, [basket]);
 
-  const addToBasket = (product: Product) => {
-    if (selectedSize !== "") {
-      const newItem = { product, size: selectedSize };
-      setBasket((prevBasket) => [...prevBasket, newItem]);
-      setSelectedSize("");
-    }
-  };
+  // const addToBasket = (product: Product) => {
+  //   if (selectedSize !== "") {
+  //     const newItem = { product, size: selectedSize };
+  //     setBasket((prevBasket) => [...prevBasket, newItem]);
+  //     setSelectedSize("");
+  //   }
+  // };
 
-  const removeFromBasket = (productId: number) => {
-    setBasket((prevBasket) =>
-      prevBasket.filter((item) => item.product.id !== productId)
-    );
-  };
+  // const removeFromBasket = (productId: number) => {
+  //   setBasket((prevBasket) =>
+  //     prevBasket.filter((item) => item.product.id !== productId)
+  //   );
+  // };
 
-  const getTotalPrice = () => {
-    return basket.reduce((total, item) => total + item.product.price, 0);
-  };
+  // const getTotalPrice = () => {
+  //   return basket.reduce((total, item) => total + item.product.price, 0);
+  // };
 
   return (
     <>
