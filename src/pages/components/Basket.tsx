@@ -24,7 +24,7 @@ const Basket: FC<Props> = ({ basket, setBasket }) => {
   const { removeFromBasket, totalPrice } = useContext(ShopContext);
 
   return (
-    <div>
+    <div className="basket-container">
       <h2>Basket</h2>
       {basket.map((item, index) => (
         <li key={index}>
