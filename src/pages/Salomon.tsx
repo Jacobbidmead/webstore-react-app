@@ -9,6 +9,7 @@ import Link from "next/link";
 import Toolbar from "@mui/material/Toolbar";
 import { AppBar } from "@mui/material";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import HomeIcon from "@mui/icons-material/Home";
 
 interface Product {
   id: number;
@@ -35,15 +36,15 @@ const Salomon: FC = () => {
             justifyContent: "space-between",
           }}
         >
-          <Link href="/BasketPage">
+          <Link href="/">
             <IconButton component="a">
-              <ShoppingCartIcon />
+              <HomeIcon />
             </IconButton>
           </Link>
 
           <Link href="/BasketPage">
             <IconButton component="a">
-              <ShoppingCartIcon />
+              <ShoppingCartIcon sx={{ cursor: "pointer" }} />
             </IconButton>
           </Link>
         </Toolbar>
