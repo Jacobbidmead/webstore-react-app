@@ -143,7 +143,7 @@ const PersistentDrawerLeft: FC = () => {
           <Divider />
           <List>
             <ListItem>
-              <Link href="/Basket">
+              <Link href="/BasketPage">
                 <span>Basket</span>
               </Link>
             </ListItem>
