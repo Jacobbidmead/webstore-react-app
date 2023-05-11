@@ -2,6 +2,13 @@ import { FC, useContext, useState } from "react";
 import salomonData from "../data/salomonProd.json";
 import Basket from "./components/Basket";
 import { ShopContext } from "@/context/shop-context";
+import MuiAppBar from "@mui/material/AppBar";
+import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
+import Link from "next/link";
+import Toolbar from "@mui/material/Toolbar";
+import { AppBar } from "@mui/material";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 interface Product {
   id: number;
@@ -21,6 +28,26 @@ const Salomon: FC = () => {
 
   return (
     <>
+      <AppBar position="fixed">
+        <Toolbar
+          sx={{
+            // backgroundColor: "#fbfbfbcc",
+            justifyContent: "space-between",
+          }}
+        >
+          <Link href="/BasketPage">
+            <IconButton component="a">
+              <ShoppingCartIcon />
+            </IconButton>
+          </Link>
+
+          <Link href="/BasketPage">
+            <IconButton component="a">
+              <ShoppingCartIcon />
+            </IconButton>
+          </Link>
+        </Toolbar>
+      </AppBar>
       <div>
         <Basket basket={basket} setBasket={setBasket} />
       </div>
