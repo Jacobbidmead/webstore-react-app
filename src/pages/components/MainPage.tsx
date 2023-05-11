@@ -6,12 +6,11 @@ import Basket from "./Basket";
 import { ShopContext } from "@/context/shop-context";
 
 const MainPage: FC = () => {
-  const { addToBasket, setSelectedSize, basket, setBasket } =
-    useContext(ShopContext);
+  // const { addToBasket, setSelectedSize, basket, setBasket } =
+  //   useContext(ShopContext);
   return (
     <>
       <div className="mainpage-container">
-        <Basket basket={basket} setBasket={setBasket} />
         <div className="welcome">
           <span className="welcome-message">Welcome.</span>
         </div>
