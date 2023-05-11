@@ -20,7 +20,7 @@ interface BasketItem {
 
 const NorseProjects: FC = () => {
   const { addToBasket, setSelectedSize, basket, setBasket } =
-    useContext(ShopContext);
+    useContext(ShopContext)!;
 
   const [selectedSize, setSelectedSizeLocal] = useState("");
 

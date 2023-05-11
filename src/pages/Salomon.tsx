@@ -15,7 +15,7 @@ interface Product {
 
 const Salomon: FC = () => {
   const { addToBasket, setSelectedSize, basket, setBasket } =
-    useContext(ShopContext);
+    useContext(ShopContext)!;
 
   const [selectedSize, setSelectedSizeLocal] = useState("");
 

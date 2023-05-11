@@ -19,6 +19,7 @@ interface ShopContextValue {
   basket: BasketItem[];
   addToBasket: (product: Product) => void;
   removeFromBasket: (item: BasketItem) => void;
+  setBasket: React.Dispatch<React.SetStateAction<BasketItem[]>>;
   totalPrice: number;
   setSelectedSize: React.Dispatch<React.SetStateAction<string>>;
 }
@@ -79,6 +80,7 @@ export const ShopContextProvider: FC<React.PropsWithChildren<{}>> = (props) => {
     addToBasket,
     removeFromBasket,
     totalPrice,
+    setBasket,
     setSelectedSize,
   };
 

@@ -4,7 +4,7 @@ import { ShopContext } from "@/context/shop-context";
 
 const BasketPage: FC = () => {
   const { addToBasket, setSelectedSize, basket, setBasket } =
-    useContext(ShopContext);
+    useContext(ShopContext)!;
   return (
     <>
       <Basket basket={basket} setBasket={setBasket} />
