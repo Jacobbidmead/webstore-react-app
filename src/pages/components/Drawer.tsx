@@ -20,7 +20,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MainPage from "./MainPage";
-import Basket from "./Basket";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 const drawerWidth = 240;
 
@@ -114,6 +114,11 @@ const PersistentDrawerLeft: FC = () => {
                 height: " 45px",
               }}
             /> */}
+            <Link href="/BasketPage">
+              <IconButton component="a">
+                <ShoppingCartIcon />
+              </IconButton>
+            </Link>
           </Toolbar>
         </AppBar>
         <Drawer
