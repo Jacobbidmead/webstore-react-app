@@ -7,5 +7,32 @@
     "size": ["S", "M", "L"],
     "price": 100,
     "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/norse-projects-regular-jeans-vintage-indigo-1_480x_crop_center.jpg?v=1660311217"
+  },
+  {
+    "id": 2,
+    "type": "Hats & Beanies",
+    "name": "Navy Cap",
+    "color": "Navy",
+    "size": ["One Size"],
+    "price": 70,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/norse-projects-twill-sports-cap-dark-navy-1_5ad3044e-eefc-4ffc-b11a-9c87eca41906_480x_crop_center.jpg?v=1629718580"
+  },
+  {
+    "id": 3,
+    "type": "Hoodies",
+    "name": "Fraser Tab Series Hoodie",
+    "color": "Scoria Blue",
+    "size": ["S", "M", "L", "XL"],
+    "price": 120,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/norse-projects-fraser-tab-series-hoodie-scoria-blue-1_480x_crop_center.jpg?v=1666367230"
+  },
+  {
+    "id": 4,
+    "type": "T-shirts & Shirts",
+    "name": "Anton Chequed Flannel Shirt",
+    "color": "Tumeric Yellow",
+    "size": ["S", "M", "L"],
+    "price": 89,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/norse-projects-anton-brushed-flannel-check-shirt-turmeric-yellow-1_480x_crop_center.jpg?v=1666367101"
   }
 ]

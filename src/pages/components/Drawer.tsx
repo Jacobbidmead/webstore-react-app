@@ -192,9 +192,6 @@ const PersistentDrawerLeft: FC = () => {
                   <Link href="/Adidas">Adidas</Link>
                 </ListItem>
                 <ListItem disablePadding>
-                  <Link href="/Palace">Palace</Link>
-                </ListItem>{" "}
-                <ListItem disablePadding>
                   <Link href="/Polar">Polar</Link>
                 </ListItem>{" "}
                 <ListItem disablePadding>
@@ -202,9 +199,6 @@ const PersistentDrawerLeft: FC = () => {
                 </ListItem>
                 <ListItem disablePadding>
                   <Link href="/NorseProjects">Norse Projects</Link>
-                </ListItem>
-                <ListItem disablePadding>
-                  <Link href="/Alltimers">Alltimers</Link>
                 </ListItem>
                 <ListItem disablePadding>
                   <Link href="/Salomon">Salomon</Link>

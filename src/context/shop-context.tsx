@@ -75,6 +75,7 @@ export const ShopContextProvider: FC<React.PropsWithChildren<{}>> = (props) => {
   };
 
   const totalPrice = basket.reduce((acc, item) => acc + item.product.price, 0);
+
   const contextValue = {
     basket,
     addToBasket,
