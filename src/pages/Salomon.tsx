@@ -20,8 +20,7 @@ interface Product {
 }
 
 const Salomon: FC = () => {
-  const { addToBasket, setSelectedSize, basket, setBasket } =
-    useContext(ShopContext)!;
+  const { addToBasket, setSelectedSize } = useContext(ShopContext)!;
 
   const [selectedSize, setSelectedSizeLocal] = useState("");
 
@@ -47,9 +46,6 @@ const Salomon: FC = () => {
           </Link>
         </Toolbar>
       </AppBar>
-      <div>
-        <Basket basket={basket} setBasket={setBasket} />
-      </div>
       <div className="store-main-container">
         <div className="store-brand-info">
           <h1>Salomon</h1>

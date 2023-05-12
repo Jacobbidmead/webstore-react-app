@@ -26,15 +26,24 @@ const Basket: FC<Props> = ({ basket, setBasket }) => {
 
   return (
     <div className="basket-container">
-      <h2>Basket</h2>
-      {basket.map((item, index) => (
-        <li key={index}>
-          {item.product.name} - {item.product.color} - {item.size} - £
-          {item.product.price}
-          <button onClick={() => removeFromBasket(item)}>Delete</button>
-        </li>
-      ))}
-      <div>Total: £{totalPrice}</div>
+      <div className="basket-header">
+        <h3>Basket</h3>
+      </div>
+      <div>
+        {basket.map((item, index) => (
+          <div className="basket-table" key={index}>
+            <img className="basket-img" src={item.product.imgUrl} alt="" />
+            <div>{item.product.name}</div>
+            <div> {item.product.color}</div> {item.size}{" "}
+            <div>£{item.product.price}</div>
+            <div>
+              {" "}
+              <button onClick={() => removeFromBasket(item)}>Delete</button>
+            </div>
+          </div>
+        ))}
+        <div>Total: £{totalPrice}</div>
+      </div>
     </div>
   );
 };

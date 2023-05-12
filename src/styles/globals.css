@@ -3,6 +3,7 @@ body {
   height: 100vh;
   padding: 0;
   margin: 0;
+  font-family: Helvetica;
 }
 
 /* Home page */
@@ -117,8 +118,16 @@ a {
 /* Basket */
 
 .basket-container {
-  color: red;
   padding-top: 80px;
+}
+
+.basket-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.basket-img {
+  width: 50%;
 }
 
 /* Store pages */
