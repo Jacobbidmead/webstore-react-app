@@ -138,17 +138,20 @@ a {
 .basket-table {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 5px;
+  text-align: center;
 }
 
 .basket-img {
   width: 50%;
+  padding-left: 20px;
 }
 
 .basket-total {
   display: flex;
   justify-content: flex-end;
   padding: 20px;
-  margin-right: 10em;
+  margin-right: 5em;
 }
 
 @media screen and (max-width: 601px) {

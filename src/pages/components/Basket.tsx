@@ -1,5 +1,6 @@
 import { FC, useContext } from "react";
 import { ShopContext } from "@/context/shop-context";
+import ClearIcon from "@mui/icons-material/Clear";
 
 interface Product {
   id: number;
@@ -38,7 +39,9 @@ const Basket: FC<Props> = ({ basket, setBasket }) => {
             <div>£{item.product.price}</div>
             <div>
               {" "}
-              <button onClick={() => removeFromBasket(item)}>Delete</button>
+              <ClearIcon onClick={() => removeFromBasket(item)}>
+                Delete
+              </ClearIcon>
             </div>
           </div>
         ))}
