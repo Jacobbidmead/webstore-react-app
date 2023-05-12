@@ -1,9 +1,14 @@
+@font-face {
+  font-family: "Futura";
+  src: url("/public/fonts/Satoshi-Regular.woff");
+}
+
 html,
 body {
   height: 100vh;
   padding: 0;
   margin: 0;
-  font-family: Helvetica;
+  font-family: Futura;
 }
 
 /* Home page */
@@ -100,6 +105,7 @@ a {
 }
 
 /* Home page */
+
 /* Store pages */
 .store-main-container {
   display: grid;
@@ -115,7 +121,15 @@ a {
   width: 100%;
 }
 
+/* Store pages */
+
 /* Basket */
+
+.basket-header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
 
 .basket-container {
   padding-top: 80px;
@@ -130,7 +144,12 @@ a {
   width: 50%;
 }
 
-/* Store pages */
+.basket-total {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  margin-right: 10em;
+}
 
 @media screen and (max-width: 601px) {
   .image-slider {

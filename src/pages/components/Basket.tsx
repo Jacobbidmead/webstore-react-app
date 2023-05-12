@@ -42,7 +42,7 @@ const Basket: FC<Props> = ({ basket, setBasket }) => {
             </div>
           </div>
         ))}
-        <div>Total: £{totalPrice}</div>
+        <div className="basket-total">Total: £{totalPrice}</div>
       </div>
     </div>
   );
