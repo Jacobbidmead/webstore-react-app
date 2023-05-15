@@ -25,7 +25,7 @@ const MainPage: FC = () => {
           <div className="latest-img-container">
             {" "}
             <img
-              src="https://cdn.shopify.com/s/files/1/2102/5145/products/new-balance-9060-shoes-grey-1_480x_crop_center.jpg?v=1677775137"
+              src="https://cdn.shopify.com/s/files/1/2102/5145/products/norse-projects-fraser-tab-series-hoodie-scoria-blue-1_480x_crop_center.jpg?v=1666367230"
               alt=""
               className="latest-img"
             />

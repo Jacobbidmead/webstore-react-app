@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "type": "trainers",
+    "name": "Superstar",
+    "color": "Black/White",
+    "size": ["6", "7", "8", "9", "10"],
+    "price": 85,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/adidas-superstar-shoes-core-black-white-gold-metallic-1_600x696_crop_center.progressive.jpg?v=1578316127"
+  },
+  {
+    "id": 2,
+    "type": "trainers",
+    "name": "Mike Arnold Handball Top Shoe",
+    "color": "Core Black/Shadow Navy/Pulse Yellow",
+    "size": ["6", "7", "8", "9", "10"],
+    "price": 150,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/adidas-x-mike-arnold-handball-top-shoes-core-black-shadow-navy-pulse-yellow-1_600x696_crop_center.progressive.jpg?v=1677764770"
+  },
+  {
+    "id": 3,
+    "type": "trainers",
+    "name": "Tyshawn Low",
+    "color": "Black/Gold Metallic",
+    "size": ["7", "8", "10"],
+    "price": 65,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/adidas-tyshawn-low-shoes-core-black-core-black-gold-metallic-core-black-1_600x696_crop_center.progressive.jpg?v=1667902848"
+  },
+  {
+    "id": 4,
+    "type": "Jackets",
+    "name": "Tyshawn Puff Jacket",
+    "color": "Black/Green",
+    "size": ["S", "M", "L", "XL"],
+    "price": 95,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/adidas-tyshawn-puff-jacket-black-collegiate-green-1_77eed6c2-ace9-4a0a-9064-994f2627b250_600x696_crop_center.progressive.jpg?v=1636712961"
+  }
+]
