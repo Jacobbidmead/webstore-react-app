@@ -46,6 +46,11 @@ const NorseProjects: FC = () => {
           </Link>
 
           <Link href="/BasketPage">
+            (
+            {basket.length > 0 && (
+              <span className="basket-counter">{basket.length}</span>
+            )}
+            )
             <IconButton component="a">
               <ShoppingCartIcon sx={{ cursor: "pointer" }} />
             </IconButton>

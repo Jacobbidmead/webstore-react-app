@@ -20,7 +20,7 @@ interface Product {
 }
 
 const Salomon: FC = () => {
-  const { addToBasket, setSelectedSize } = useContext(ShopContext)!;
+  const { addToBasket, setSelectedSize, basket } = useContext(ShopContext)!;
 
   const [selectedSize, setSelectedSizeLocal] = useState("");
 
@@ -40,6 +40,9 @@ const Salomon: FC = () => {
           </Link>
 
           <Link href="/BasketPage">
+            {basket.length > 0 && (
+              <span className="basket-counter">({basket.length})</span>
+            )}
             <IconButton component="a">
               <ShoppingCartIcon sx={{ cursor: "pointer" }} />
             </IconButton>

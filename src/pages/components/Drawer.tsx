@@ -1,5 +1,5 @@
 import * as React from "react";
-import { FC } from "react";
+import { FC, useContext } from "react";
 import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
@@ -21,6 +21,22 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MainPage from "./MainPage";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { ShopContext } from "@/context/shop-context";
+
+interface Product {
+  id: number;
+  type: string;
+  name: string;
+  color: string;
+  size: string[];
+  price: number;
+  imgUrl: string;
+}
+
+interface BasketItem {
+  product: Product;
+  size: string;
+}
 
 const drawerWidth = 240;
 
@@ -74,6 +90,7 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 }));
 
 const PersistentDrawerLeft: FC = () => {
+  const { basket } = useContext(ShopContext)!;
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
@@ -92,7 +109,6 @@ const PersistentDrawerLeft: FC = () => {
         <AppBar position="fixed" open={open}>
           <Toolbar
             sx={{
-              // backgroundColor: "#fbfbfbcc",
               justifyContent: "space-between",
             }}
           >
@@ -101,20 +117,16 @@ const PersistentDrawerLeft: FC = () => {
               aria-label="open drawer"
               onClick={handleDrawerOpen}
               edge="start"
-              // sx={{ mr: 2, ...(open && { display: "none" }) }}
             >
               <MenuIcon />
             </IconButton>
-            {/* <TextField
-              variant="outlined"
-              sx={{
-                backgroundColor: "white",
-                border: "none",
-                borderRadius: "40px",
-                height: " 45px",
-              }}
-            /> */}
+
             <Link href="/BasketPage">
+              (
+              {basket.length > 0 && (
+                <span className="basket-counter">{basket.length}</span>
+              )}
+              )
               <IconButton component="a">
                 <ShoppingCartIcon />
               </IconButton>

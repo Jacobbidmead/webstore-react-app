@@ -16,7 +16,7 @@ interface BasketItem {
 }
 
 interface ShopContextValue {
-  basket: BasketItem[] | null;
+  basket: BasketItem[];
   addToBasket: (product: Product) => void;
   removeFromBasket: (item: BasketItem) => void;
   setBasket: React.Dispatch<React.SetStateAction<BasketItem[] | null>>;
@@ -27,7 +27,7 @@ interface ShopContextValue {
 export const ShopContext = createContext<ShopContextValue | null>(null);
 
 export const ShopContextProvider: FC<React.PropsWithChildren<{}>> = (props) => {
-  const [basket, setBasket] = useState<BasketItem[] | null>(null);
+  const [basket, setBasket] = useState<BasketItem[]>([]);
   const [selectedSize, setSelectedSize] = useState("");
   const [hasInitialized, setHasInitialized] = useState(false);
 
