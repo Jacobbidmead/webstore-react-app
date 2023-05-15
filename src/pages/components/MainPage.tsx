@@ -1,9 +1,7 @@
-import { useState, FC, useContext } from "react";
+import { FC } from "react";
 import HomeSwiper from "./HomeSwiper";
 import mainImg from "@/imageData/mainImgData";
 import Link from "next/link";
-import Basket from "./Basket";
-import { ShopContext } from "@/context/shop-context";
 
 const MainPage: FC = () => {
   // const { addToBasket, setSelectedSize, basket, setBasket } =
