@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "type": "trainers",
+    "name": "Blazer",
+    "color": "Summit White/Nightshade",
+    "size": ["6", "7", "9", "10"],
+    "price": 95,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/nike-sb-blazer-mid-shoes-summit-white-nightshade-white-1_600x696_crop_center.progressive.jpg?v=1663164414"
+  },
+  {
+    "id": 2,
+    "type": "trainers",
+    "name": "Dunk SB",
+    "color": "Adobe/Phantom/Gum",
+    "size": ["6", "7", "8", "9", "10"],
+    "price": 150,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/nike-sb-dunk-low-pro-premium-shoes-adobe-adobe-phantom-gum-light-brown--1_600x696_crop_center.progressive.jpg?v=1673520653"
+  },
+  {
+    "id": 3,
+    "type": "Tshirt & Shirts",
+    "name": "Globe Guy Tshirt",
+    "color": "Grey",
+    "size": ["S", "M", "L"],
+    "price": 35,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/nike-sb-globe-guy-t-shirt-grey-heather-2_600x696_crop_center.progressive.jpg?v=1683792583"
+  },
+  {
+    "id": 4,
+    "type": "trainers",
+    "name": "Janoski OG",
+    "color": "Alabaster/Chilli red",
+    "size": ["6", "7", "8", "9", "10"],
+    "price": 80,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/nike-sb-janoski-og_-shoes-alabaster-alabaster-chile-red-1_600x696_crop_center.progressive.jpg?v=1679483172"
+  }
+]
