@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "type": "T-shirts & Shirts",
+    "name": "Spiral Shirt",
+    "color": "Black/White",
+    "size": ["S", "M", "L"],
+    "price": 95,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/polar-spiral-shirt-black-white-1_1300x1500_crop_center.progressive.jpg?v=1676295201"
+  },
+  {
+    "id": 2,
+    "type": "Jeans & Trousers",
+    "name": "Bib Boy Jeans",
+    "color": "Light Blue",
+    "size": ["S", "M", "L", "XL"],
+    "price": 110,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/polar-big-boy-jeans-light-blue-3_37c29c94-1093-4f50-bba3-1bded6772014_600x696_crop_center.progressive.jpg?v=1647261599"
+  },
+  {
+    "id": 3,
+    "type": "Hoodies",
+    "name": "Paul Knit Sweatshirt",
+    "color": "Grey",
+    "size": ["S", "M", "L", "XL"],
+    "price": 110,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/polar-paul-knit-sweatshirt-grey-1_600x696_crop_center.progressive.jpg?v=1676295151"
+  },
+  {
+    "id": 4,
+    "type": "Jeans & Trousers",
+    "name": "Big Boy Cords",
+    "color": "Dark Blue",
+    "size": ["S", "M", "L"],
+    "price": 110,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/polar-big-boy-cord-pants-navy-1_600x696_crop_center.progressive.jpg?v=1674466556"
+  }
+]
