@@ -22,7 +22,7 @@ export interface Props {
   setBasket: React.Dispatch<React.SetStateAction<BasketItem[]>>;
 }
 
-const Basket: FC<Props> = ({ basket, setBasket }) => {
+const Basket: FC<Props> = ({ basket }) => {
   const { removeFromBasket, totalPrice } = useContext(ShopContext)!;
 
   return (

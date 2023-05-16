@@ -43,7 +43,7 @@ const Salomon: FC = () => {
             {basket.length > 0 && (
               <span className="basket-counter">({basket.length})</span>
             )}
-            <IconButton component="a">
+            <IconButton>
               <ShoppingCartIcon sx={{ cursor: "pointer" }} />
             </IconButton>
           </Link>

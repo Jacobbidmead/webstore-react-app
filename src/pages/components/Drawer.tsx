@@ -127,7 +127,7 @@ const PersistentDrawerLeft: FC = () => {
                 <span className="basket-counter">{basket.length}</span>
               )}
               )
-              <IconButton component="a">
+              <IconButton>
                 <ShoppingCartIcon />
               </IconButton>
             </Link>
@@ -172,7 +172,7 @@ const PersistentDrawerLeft: FC = () => {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Typography>Clothing</Typography>
+                <Box>Clothing</Box>
               </AccordionSummary>
               <AccordionDetails>
                 <ListItem disablePadding>
@@ -202,7 +202,7 @@ const PersistentDrawerLeft: FC = () => {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Typography>Brands</Typography>
+                <Box>Brands</Box>
               </AccordionSummary>
               <AccordionDetails>
                 <ListItem disablePadding>
