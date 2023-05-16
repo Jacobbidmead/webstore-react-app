@@ -57,9 +57,7 @@ const NorseProjects: FC = () => {
           </Link>
         </Toolbar>
       </AppBar>
-      <div>
-        <Basket basket={basket} setBasket={setBasket} />
-      </div>
+
       <div className="store-main-container">
         <div className="store-brand-info">
           <h1>Norse Projects</h1>

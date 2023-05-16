@@ -1,6 +1,5 @@
 import { useState, FC, useContext } from "react";
 import nikeData from "../data/nikeProd.json";
-import Basket from "./components/Basket";
 import { ShopContext } from "@/context/shop-context";
 import IconButton from "@mui/material/IconButton";
 import Link from "next/link";
@@ -62,7 +61,17 @@ const Nike: FC = () => {
         <div className="store-brand-info">
           <h1>Nike</h1>
         </div>
-        <div>Nike Des</div>
+        <div>
+          Nike is the ultimate destination for athletic excellence and iconic
+          style. As a global leader in sportswear, Nike offers a meticulously
+          curated collection of cutting-edge footwear, apparel, and accessories.
+          With a relentless focus on innovation, Nike merges advanced technology
+          with unparalleled comfort and trend-setting designs. Whether you're an
+          athlete pushing your limits or a fashion enthusiast seeking sporty
+          sophistication, Nike provides the perfect blend of performance and
+          style. Step into the world of Nike and experience the pinnacle of
+          athletic prowess and enduring fashion.
+        </div>
         <div>
           <div className="store-items-container">
             {nikeData.map((item) => (

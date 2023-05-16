@@ -1,6 +1,5 @@
 import { useState, FC, useContext } from "react";
 import adidasData from "../data/adidasProd.json";
-import Basket from "./components/Basket";
 import { ShopContext } from "@/context/shop-context";
 import IconButton from "@mui/material/IconButton";
 import Link from "next/link";
