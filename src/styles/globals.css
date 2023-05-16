@@ -11,6 +11,10 @@ body {
   font-family: Futura;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Home page */
 
 .accordian {

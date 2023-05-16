@@ -74,17 +74,18 @@ const Nike: FC = () => {
         <div>
           <div className="store-items-container">
             {nikeData.map((item) => (
-              <div key={item.id}>
+              <div key={item.id} className="products">
                 <img src={item.imgUrl} alt="" className="product-image" />
-                <div>{item.name}</div>
-                <div>{item.color}</div>
-                <div>{item.price}</div>
+                <div className="product-name">{item.name}</div>
+                <div className="product-color">{item.color}</div>
+                <div className="product-price">{item.price}</div>
                 <form
                   onSubmit={(event) => {
                     event.preventDefault();
                   }}
                 >
                   <select
+                    className="select-size"
                     value={selectedSize}
                     onChange={(event) => setSelectedSize(event.target.value)}
                   >
