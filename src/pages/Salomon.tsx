@@ -51,9 +51,9 @@ const Salomon: FC = () => {
       </AppBar>
       <div className="store-main-container">
         <div className="store-brand-info">
-          <h1>Salomon</h1>
+          <h1 className="brand-name">Salomon</h1>
         </div>
-        <div>
+        <div className="brand-description">
           The Salomon XT-6 trainers are high-performance shoes designed for
           trail running and outdoor activities. They feature a breathable mesh
           and synthetic upper with Sensifit™ technology and a Quicklace™ system
@@ -71,7 +71,7 @@ const Salomon: FC = () => {
         <div>
           <div className="store-items-container">
             {salomonData.map((item) => (
-              <div key={item.id}>
+              <div key={item.id} className="products">
                 <img src={item.imgUrl} alt="" className="product-image" />
                 <div>{item.name}</div>
                 <div>{item.color}</div>

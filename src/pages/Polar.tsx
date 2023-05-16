@@ -58,9 +58,9 @@ const Polar: FC = () => {
 
       <div className="store-main-container">
         <div className="store-brand-info">
-          <h1>Polar</h1>
+          <h1 className="brand-name">Polar</h1>
         </div>
-        <div>Polar descritption</div>
+        <div className="brand-description">Polar descritption</div>
         <div>
           <div className="store-items-container">
             {polarData.map((item) => (

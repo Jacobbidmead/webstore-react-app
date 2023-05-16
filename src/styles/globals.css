@@ -107,14 +107,38 @@ a {
 /* Home page */
 
 /* Store pages */
+
+.brand-name {
+  font-size: 80px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f6a37c;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 80px;
+}
+
+.brand-description {
+  font-size: 40px;
+  padding: 50px 50px 0px 50px;
+}
+
+.store-brand-info {
+  margin-top: 90px;
+}
+
 .store-main-container {
   display: grid;
-  grid-template-rows: 1fr 1fr 8fr;
+  grid-template-rows: 0.5fr 1fr 1fr;
 }
 
 .store-items-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  padding: 20px;
+  margin-bottom: 40px;
 }
 
 .product-image {

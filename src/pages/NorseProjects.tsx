@@ -59,9 +59,9 @@ const NorseProjects: FC = () => {
 
       <div className="store-main-container">
         <div className="store-brand-info">
-          <h1>Norse Projects</h1>
+          <h1 className="brand-name">Norse Projects</h1>
         </div>
-        <div>
+        <div className="brand-description">
           Discover Norse Projects, the epitome of timeless Scandinavian design
           and contemporary style. With a carefully curated collection of premium
           clothing and accessories, their web store blends Nordic craftsmanship

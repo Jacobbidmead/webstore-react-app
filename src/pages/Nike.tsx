@@ -58,9 +58,9 @@ const Nike: FC = () => {
 
       <div className="store-main-container">
         <div className="store-brand-info">
-          <h1>Nike</h1>
+          <h1 className="brand-name">Nike</h1>
         </div>
-        <div>
+        <div className="brand-description">
           Nike is the ultimate destination for athletic excellence and iconic
           style. As a global leader in sportswear, Nike offers a meticulously
           curated collection of cutting-edge footwear, apparel, and accessories.

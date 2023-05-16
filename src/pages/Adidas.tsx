@@ -58,9 +58,9 @@ const Adidas: FC = () => {
 
       <div className="store-main-container">
         <div className="store-brand-info">
-          <h1>Adidas</h1>
+          <h1 className="brand-name">Adidas</h1>
         </div>
-        <div>Adidas description</div>
+        <div className="brand-description">Adidas description</div>
         <div>
           <div className="store-items-container">
             {adidasData.map((item) => (
