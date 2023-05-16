@@ -68,7 +68,7 @@ const Adidas: FC = () => {
                 <img src={item.imgUrl} alt="" className="product-image" />
                 <div className="product-name">{item.name}</div>
                 <div className="product-color">{item.color}</div>
-                <div className="product-price">{item.price}</div>
+                <div className="product-price">£{item.price}</div>
                 <form
                   onSubmit={(event) => {
                     event.preventDefault();

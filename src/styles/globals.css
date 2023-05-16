@@ -149,6 +149,31 @@ a {
   width: 100%;
 }
 
+.products {
+  font-size: 12px;
+  padding: 5px;
+}
+
+.select-size {
+  font-family: inherit;
+  font-size: 10px;
+  margin: 8px 0px 8px 0px;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+button {
+  font-size: 11px;
+  border-radius: 50px;
+  background-color: white;
+  font-family: inherit;
+  border: 1px solid black;
+}
+
 /* Store pages */
 
 /* Basket */
