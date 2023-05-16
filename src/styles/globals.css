@@ -98,6 +98,11 @@ a {
   height: 100%;
 }
 
+.product-link {
+  color: black;
+  text-decoration: none;
+}
+
 /* swiper */
 
 .image-slider {
@@ -216,5 +221,10 @@ a {
 @media screen and (max-width: 601px) {
   .image-slider {
     width: 100%;
+  }
+
+  .store-items-container {
+    display: flex;
+    flex-direction: column;
   }
 }

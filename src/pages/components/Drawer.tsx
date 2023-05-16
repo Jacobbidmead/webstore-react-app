@@ -140,7 +140,7 @@ const PersistentDrawerLeft: FC = () => {
             "& .MuiDrawer-paper": {
               width: drawerWidth,
               boxSizing: "border-box",
-              // backgroundColor: "yellow",
+              backgroundColor: "yellow",
             },
           }}
           variant="persistent"
@@ -161,12 +161,12 @@ const PersistentDrawerLeft: FC = () => {
           <List>
             <ListItem>
               <Link href="/BasketPage">
-                <span>Basket</span>
+                <span className="product-link">Basket</span>
               </Link>
             </ListItem>
             <Divider />
 
-            <Accordion className="accordian">
+            <Accordion className="accordian" sx={{ backgroundColor: "yellow" }}>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
@@ -176,27 +176,39 @@ const PersistentDrawerLeft: FC = () => {
               </AccordionSummary>
               <AccordionDetails>
                 <ListItem disablePadding>
-                  <Link href="/T-shirts">T-shirts & Shirts</Link>
+                  <Link href="/T-shirts" className="product-link">
+                    T-shirts & Shirts
+                  </Link>
                 </ListItem>
                 <ListItem disablePadding>
-                  <Link href="/Hoodies">Hoodies</Link>
+                  <Link href="/Hoodies" className="product-link">
+                    Hoodies
+                  </Link>
                 </ListItem>{" "}
                 <ListItem disablePadding>
-                  <Link href="/Jackets">Jackets</Link>
+                  <Link href="/Jackets" className="product-link">
+                    Jackets
+                  </Link>
                 </ListItem>{" "}
                 <ListItem disablePadding>
-                  <Link href="/Trousers">Jeans & Trousers</Link>
+                  <Link href="/Trousers" className="product-link">
+                    Jeans & Trousers
+                  </Link>
                 </ListItem>
                 <ListItem disablePadding>
-                  <Link href="/Hats">Hats & Beanies</Link>
+                  <Link href="/Hats" className="product-link">
+                    Hats & Beanies
+                  </Link>
                 </ListItem>
                 <ListItem disablePadding>
-                  <Link href="/Shoes">Shoes</Link>
+                  <Link href="/Shoes" className="product-link">
+                    Shoes
+                  </Link>
                 </ListItem>
               </AccordionDetails>
             </Accordion>
 
-            <Accordion className="accordian">
+            <Accordion className="accordian" sx={{ backgroundColor: "yellow" }}>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
@@ -206,19 +218,29 @@ const PersistentDrawerLeft: FC = () => {
               </AccordionSummary>
               <AccordionDetails>
                 <ListItem disablePadding>
-                  <Link href="/Adidas">Adidas</Link>
+                  <Link href="/Adidas" className="product-link">
+                    Adidas
+                  </Link>
                 </ListItem>
                 <ListItem disablePadding>
-                  <Link href="/Polar">Polar</Link>
+                  <Link href="/Polar" className="product-link">
+                    Polar
+                  </Link>
                 </ListItem>{" "}
                 <ListItem disablePadding>
-                  <Link href="/Nike">Nike</Link>
+                  <Link href="/Nike" className="product-link">
+                    Nike
+                  </Link>
                 </ListItem>
                 <ListItem disablePadding>
-                  <Link href="/NorseProjects">Norse Projects</Link>
+                  <Link href="/NorseProjects" className="product-link">
+                    Norse Projects
+                  </Link>
                 </ListItem>
                 <ListItem disablePadding>
-                  <Link href="/Salomon">Salomon</Link>
+                  <Link href="/Salomon" className="product-link">
+                    Salomon
+                  </Link>
                 </ListItem>
               </AccordionDetails>
             </Accordion>
