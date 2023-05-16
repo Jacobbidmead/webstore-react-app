@@ -43,7 +43,7 @@ const Adidas: FC = () => {
             </IconButton>
           </Link>
 
-          <Link href="/BasketPage">
+          <Link href="/BasketPage" className="basket-counter">
             (
             {basket.length > 0 && (
               <span className="basket-counter">{basket.length}</span>
@@ -60,7 +60,18 @@ const Adidas: FC = () => {
         <div className="store-brand-info">
           <h1 className="brand-name">Adidas</h1>
         </div>
-        <div className="brand-description">Adidas description</div>
+        <div className="brand-description">
+          Step into the world of adidas, where sport meets style in perfect
+          harmony. As a renowned global brand, adidas offers a curated selection
+          of athletic footwear, apparel, and accessories that combine
+          performance and fashion effortlessly. With a rich heritage in sports
+          innovation, adidas continues to push boundaries, delivering
+          cutting-edge designs that empower athletes and enthusiasts alike. From
+          iconic sneakers to high-performance activewear, adidas ensures optimal
+          comfort, durability, and a touch of streetwear flair. Explore the
+          adidas collection and embrace a legacy of excellence that transcends
+          the boundaries of sport and fashion.
+        </div>
         <div>
           <div className="store-items-container">
             {adidasData.map((item) => (

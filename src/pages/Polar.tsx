@@ -43,7 +43,7 @@ const Polar: FC = () => {
             </IconButton>
           </Link>
 
-          <Link href="/BasketPage">
+          <Link href="/BasketPage" className="basket-counter">
             (
             {basket.length > 0 && (
               <span className="basket-counter">{basket.length}</span>

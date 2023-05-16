@@ -15,6 +15,14 @@ a {
   text-decoration: none;
 }
 
+button {
+  font-size: 11px;
+  border-radius: 50px;
+  background-color: white;
+  font-family: inherit;
+  border: 1px solid black;
+}
+
 /* Home page */
 
 .accordian {
@@ -166,12 +174,9 @@ a {
   cursor: pointer;
 }
 
-button {
-  font-size: 11px;
-  border-radius: 50px;
-  background-color: white;
-  font-family: inherit;
-  border: 1px solid black;
+.basket-counter {
+  font-size: 12px;
+  color: black;
 }
 
 /* Store pages */
