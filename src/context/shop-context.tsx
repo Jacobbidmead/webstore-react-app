@@ -22,6 +22,7 @@ interface ShopContextValue {
   setBasket: React.Dispatch<React.SetStateAction<BasketItem[]>>;
   totalPrice: number;
   setSelectedSize: React.Dispatch<React.SetStateAction<string>>;
+  toggleDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export const ShopContext = createContext<ShopContextValue | null>(null);
@@ -30,6 +31,7 @@ export const ShopContextProvider: FC<React.PropsWithChildren<{}>> = (props) => {
   const [basket, setBasket] = useState<BasketItem[]>([]);
   const [selectedSize, setSelectedSize] = useState("");
   const [hasInitialized, setHasInitialized] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
   // Load basket from local storage
   useEffect(() => {
@@ -82,6 +84,10 @@ export const ShopContextProvider: FC<React.PropsWithChildren<{}>> = (props) => {
     ? basket.reduce((acc, item) => acc + item.product.price, 0)
     : 0;
 
+  const toggleDarkMode = () => {
+    setDarkMode((prevDarkMode) => !prevDarkMode);
+  };
+
   const contextValue = {
     basket,
     addToBasket,
@@ -89,11 +95,13 @@ export const ShopContextProvider: FC<React.PropsWithChildren<{}>> = (props) => {
     totalPrice,
     setBasket,
     setSelectedSize,
+    darkMode,
+    toggleDarkMode,
   };
 
   return (
     <ShopContext.Provider value={contextValue}>
-      {props.children}
+      <div className={darkMode ? "dark-mode" : ""}>{props.children}</div>
     </ShopContext.Provider>
   );
 };

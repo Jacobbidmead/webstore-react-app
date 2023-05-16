@@ -7,7 +7,6 @@ import CssBaseline from "@mui/material/CssBaseline";
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import List from "@mui/material/List";
-import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -90,7 +89,7 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 }));
 
 const PersistentDrawerLeft: FC = () => {
-  const { basket } = useContext(ShopContext)!;
+  const { basket, toggleDarkMode } = useContext(ShopContext)!;
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
@@ -112,6 +111,7 @@ const PersistentDrawerLeft: FC = () => {
               justifyContent: "space-between",
             }}
           >
+            {/* <div onClick={toggleDarkMode}>Dark Mode</div> */}
             <IconButton
               color="inherit"
               aria-label="open drawer"
