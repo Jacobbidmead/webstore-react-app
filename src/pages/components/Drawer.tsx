@@ -140,7 +140,7 @@ const PersistentDrawerLeft: FC = () => {
             "& .MuiDrawer-paper": {
               width: drawerWidth,
               boxSizing: "border-box",
-              backgroundColor: "yellow",
+              backgroundColor: "rgba(160, 227, 204, 0.94)",
             },
           }}
           variant="persistent"
@@ -166,7 +166,10 @@ const PersistentDrawerLeft: FC = () => {
             </ListItem>
             <Divider />
 
-            <Accordion className="accordian" sx={{ backgroundColor: "yellow" }}>
+            <Accordion
+              className="accordian"
+              sx={{ backgroundColor: "rgba(160, 227, 204, 0.94)" }}
+            >
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
@@ -208,7 +211,10 @@ const PersistentDrawerLeft: FC = () => {
               </AccordionDetails>
             </Accordion>
 
-            <Accordion className="accordian" sx={{ backgroundColor: "yellow" }}>
+            <Accordion
+              className="accordian"
+              sx={{ backgroundColor: "rgba(160, 227, 204, 0.94)" }}
+            >
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
