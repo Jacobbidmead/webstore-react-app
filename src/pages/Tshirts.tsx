@@ -11,9 +11,7 @@ import HomeIcon from "@mui/icons-material/Home";
 const Tshirts: FC = () => {
   const { addToBasket, setSelectedSize, basket } = useContext(ShopContext)!;
 
-  const trainers = allProdData.filter(
-    (item) => item.type === "T-shirts & Shirts"
-  );
+  const trainers = allProdData.filter((item) => item.type === "T-shirts");
 
   const [selectedSize, setSelectedSizeLocal] = useState("");
   return (

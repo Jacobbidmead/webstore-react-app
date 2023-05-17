@@ -62,7 +62,7 @@
   {
     "id": 3,
     "brand": "Nike",
-    "type": "T-shirts & Shirts",
+    "type": "Tshirts",
     "name": "Globe Guy Tshirt",
     "color": "Grey",
     "size": ["S", "M", "L"],
@@ -112,7 +112,7 @@
   {
     "id": 4,
     "brand": "Norse Projects",
-    "type": "T-shirts & Shirts",
+    "type": "Tshirts",
     "name": "Anton Chequed Flannel Shirt",
     "color": "Tumeric Yellow",
     "size": ["S", "M", "L"],
@@ -122,7 +122,7 @@
   {
     "id": 1,
     "brand": "Polar",
-    "type": "T-shirts & Shirts",
+    "type": "Tshirts",
     "name": "Spiral Shirt",
     "color": "Black/White",
     "size": ["S", "M", "L"],

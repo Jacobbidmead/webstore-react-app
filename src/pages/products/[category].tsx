@@ -3,6 +3,17 @@ import { useRouter } from "next/router";
 import { ShopContext } from "@/context/shop-context";
 import allProdData from "../../data/allProd.json";
 
+interface Product {
+  id: number;
+  type: string;
+  name: string;
+  color: string;
+  size: string[];
+  price: number;
+  imgUrl: string;
+  brand: string;
+}
+
 const ProductPage: FC = () => {
   const router = useRouter();
   const { addToBasket, setSelectedSize, basket } = useContext(ShopContext)!;
@@ -11,7 +22,7 @@ const ProductPage: FC = () => {
 
   const [selectedSize, setSelectedSizeLocal] = useState("");
 
-  let products = [];
+  let products: Product[] = [];
 
   // Check if the category is defined before filtering the products.
   if (category) {
@@ -27,7 +38,7 @@ const ProductPage: FC = () => {
 
         <div>
           <div className="store-items-container">
-            {allProdData.map((item) => (
+            {products.map((item) => (
               <div key={item.id} className="products">
                 <img src={item.imgUrl} alt="" className="product-image" />
                 <div className="product-name">{item.brand}</div>
