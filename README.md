@@ -4,8 +4,6 @@ This is a front end e-commerce store, it has very limited functionality in which
 
 As this is purely a front end app, it does not use a database, instead all of the data is held in JSON files. Products can be added to the app by adding an object to the JSON array.
 
-The app also contains a search bar, which will allow users to search for specific brands & categorys.
-
 This app uses the material UI component library, to run download the repo and run npm install, then npm run dev.
 
 ## Getting Started
