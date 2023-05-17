@@ -3,12 +3,15 @@
   src: url("/public/fonts/Satoshi-Regular.woff");
 } */
 
-html,
 body {
-  height: 100vh;
   padding: 0;
   margin: 0;
   font-family: Futura;
+  height: 100%;
+}
+
+html {
+  height: 100%;
 }
 
 a {
@@ -55,8 +58,7 @@ a {
 .mainpage-container {
   display: grid;
   grid-template-rows: 0.5fr 0.5fr 0.2fr 1fr;
-
-  background-color: rgb(244, 132, 94);
+  height: 100vh;
 }
 
 .latest-container {
@@ -77,10 +79,9 @@ a {
 }
 
 .latest-header {
-  text-align: center;
   background-color: #f6a37c;
-  margin: 40px 20px 0px 20px;
-  height: 200px;
+  margin: 0px 20px 60px 20px;
+  height: 300px;
   border-radius: 20px;
 }
 
@@ -218,6 +219,7 @@ a {
 .basket-container {
   padding-top: 80px;
   background-color: #faf9f6;
+  height: 100vh;
 }
 
 .basket-table {
@@ -245,6 +247,16 @@ a {
   }
 
   .store-items-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .latest-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mainpage-container {
     display: flex;
     flex-direction: column;
   }
