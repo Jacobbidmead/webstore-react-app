@@ -179,7 +179,7 @@ const PersistentDrawerLeft: FC = () => {
               </AccordionSummary>
               <AccordionDetails>
                 <ListItem disablePadding>
-                  <Link href="/T-shirts" className="product-link">
+                  <Link href="/Tshirts" className="product-link">
                     T-shirts & Shirts
                   </Link>
                 </ListItem>
