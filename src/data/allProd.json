@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "type": "Trainers",
+    "name": "Superstar",
+    "color": "Black/White",
+    "size": ["6", "7", "8", "9", "10"],
+    "price": 85,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/adidas-superstar-shoes-core-black-white-gold-metallic-1_600x696_crop_center.progressive.jpg?v=1578316127"
+  },
+  {
+    "id": 2,
+    "type": "Trainers",
+    "name": "Mike Arnold Handball Top Shoe",
+    "color": "Core Black/Shadow Navy/Pulse Yellow",
+    "size": ["6", "7", "8", "9", "10"],
+    "price": 150,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/adidas-x-mike-arnold-handball-top-shoes-core-black-shadow-navy-pulse-yellow-1_600x696_crop_center.progressive.jpg?v=1677764770"
+  },
+  {
+    "id": 3,
+    "type": "Trainers",
+    "name": "Tyshawn Low",
+    "color": "Black/Gold Metallic",
+    "size": ["7", "8", "10"],
+    "price": 65,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/adidas-tyshawn-low-shoes-core-black-core-black-gold-metallic-core-black-1_600x696_crop_center.progressive.jpg?v=1667902848"
+  },
+  {
+    "id": 4,
+    "type": "Jackets",
+    "name": "Tyshawn Puff Jacket",
+    "color": "Black/Green",
+    "size": ["S", "M", "L", "XL"],
+    "price": 95,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/adidas-tyshawn-puff-jacket-black-collegiate-green-1_77eed6c2-ace9-4a0a-9064-994f2627b250_600x696_crop_center.progressive.jpg?v=1636712961"
+  },
+  {
+    "id": 1,
+    "type": "Trainers",
+    "name": "Blazer",
+    "color": "Summit White/Nightshade",
+    "size": ["6", "7", "9", "10"],
+    "price": 95,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/nike-sb-blazer-mid-shoes-summit-white-nightshade-white-1_600x696_crop_center.progressive.jpg?v=1663164414"
+  },
+  {
+    "id": 2,
+    "type": "Trainers",
+    "name": "Dunk SB",
+    "color": "Adobe/Phantom/Gum",
+    "size": ["6", "7", "8", "9", "10"],
+    "price": 150,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/nike-sb-dunk-low-pro-premium-shoes-adobe-adobe-phantom-gum-light-brown--1_600x696_crop_center.progressive.jpg?v=1673520653"
+  },
+  {
+    "id": 3,
+    "type": "Tshirt & Shirts",
+    "name": "Globe Guy Tshirt",
+    "color": "Grey",
+    "size": ["S", "M", "L"],
+    "price": 35,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/nike-sb-globe-guy-t-shirt-grey-heather-2_600x696_crop_center.progressive.jpg?v=1683792583"
+  },
+  {
+    "id": 4,
+    "type": "Trainers",
+    "name": "Janoski OG",
+    "color": "Alabaster/Chilli red",
+    "size": ["6", "7", "8", "9", "10"],
+    "price": 80,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/nike-sb-janoski-og_-shoes-alabaster-alabaster-chile-red-1_600x696_crop_center.progressive.jpg?v=1679483172"
+  },
+  {
+    "id": 1,
+    "type": "Jeans & Trousers",
+    "name": "Regular Jeans",
+    "color": "Blue",
+    "size": ["S", "M", "L"],
+    "price": 100,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/norse-projects-regular-jeans-vintage-indigo-1_480x_crop_center.jpg?v=1660311217"
+  },
+  {
+    "id": 2,
+    "type": "Hats & Beanies",
+    "name": "Navy Cap",
+    "color": "Navy",
+    "size": ["One Size"],
+    "price": 70,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/norse-projects-twill-sports-cap-dark-navy-1_5ad3044e-eefc-4ffc-b11a-9c87eca41906_480x_crop_center.jpg?v=1629718580"
+  },
+  {
+    "id": 3,
+    "type": "Hoodies",
+    "name": "Fraser Tab Series Hoodie",
+    "color": "Scoria Blue",
+    "size": ["S", "M", "L", "XL"],
+    "price": 120,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/norse-projects-fraser-tab-series-hoodie-scoria-blue-1_480x_crop_center.jpg?v=1666367230"
+  },
+  {
+    "id": 4,
+    "type": "T-shirts & Shirts",
+    "name": "Anton Chequed Flannel Shirt",
+    "color": "Tumeric Yellow",
+    "size": ["S", "M", "L"],
+    "price": 89,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/norse-projects-anton-brushed-flannel-check-shirt-turmeric-yellow-1_480x_crop_center.jpg?v=1666367101"
+  },
+  {
+    "id": 1,
+    "type": "T-shirts & Shirts",
+    "name": "Spiral Shirt",
+    "color": "Black/White",
+    "size": ["S", "M", "L"],
+    "price": 95,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/polar-spiral-shirt-black-white-1_1300x1500_crop_center.progressive.jpg?v=1676295201"
+  },
+  {
+    "id": 2,
+    "type": "Jeans & Trousers",
+    "name": "Bib Boy Jeans",
+    "color": "Light Blue",
+    "size": ["S", "M", "L", "XL"],
+    "price": 110,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/polar-big-boy-jeans-light-blue-3_37c29c94-1093-4f50-bba3-1bded6772014_600x696_crop_center.progressive.jpg?v=1647261599"
+  },
+  {
+    "id": 3,
+    "type": "Hoodies",
+    "name": "Paul Knit Sweatshirt",
+    "color": "Grey",
+    "size": ["S", "M", "L", "XL"],
+    "price": 110,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/polar-paul-knit-sweatshirt-grey-1_600x696_crop_center.progressive.jpg?v=1676295151"
+  },
+  {
+    "id": 4,
+    "type": "Jeans & Trousers",
+    "name": "Big Boy Cords",
+    "color": "Dark Blue",
+    "size": ["S", "M", "L"],
+    "price": 110,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/polar-big-boy-cord-pants-navy-1_600x696_crop_center.progressive.jpg?v=1674466556"
+  },
+  {
+    "id": 1,
+    "type": "Trainers",
+    "name": "Salomon xt-6",
+    "color": "Camel",
+    "size": ["6", "7", "8", "9", "10"],
+    "price": 150,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/andwanderxSalomonXT-6Shoes-1_480x_crop_center.jpg?v=1669296832"
+  },
+  {
+    "id": 2,
+    "type": "Trainers",
+    "name": "Salomon xt-6",
+    "color": "Black/Black/Phantom",
+    "size": ["6", "7", "8", "9", "10"],
+    "price": 150,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/salomon-xt-6-shoes-black-black-phantom-1_480x_crop_center.jpg?v=1626966103"
+  },
+  {
+    "id": 3,
+    "type": "Trainers",
+    "name": "Salomon xt-6",
+    "color": "White/White/Lunar Rock",
+    "size": ["6", "7", "8", "9", "10"],
+    "price": 150,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/salomon-xt-6-shoes-white-white-lunar-rock-1_480x_crop_center.jpg?v=1626966167"
+  },
+  {
+    "id": 4,
+    "type": "Trainers",
+    "name": "Salomon xt-6",
+    "color": "Laurel Wreath/Lily Pad/Desert Sage",
+    "size": ["6", "7", "8", "9", "10"],
+    "price": 150,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/salomon-xt-6-shoes-laurel-wreath-lily-pad-desert-sage-1_480x_crop_center.jpg?v=1679649910"
+  }
+]

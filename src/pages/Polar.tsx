@@ -50,7 +50,10 @@ const Polar: FC = () => {
             )}
             )
             <IconButton>
-              <ShoppingCartIcon sx={{ cursor: "pointer" }} />
+              <ShoppingCartIcon
+                sx={{ cursor: "pointer" }}
+                className="cart-icon"
+              />
             </IconButton>
           </Link>
         </Toolbar>
