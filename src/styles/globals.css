@@ -79,10 +79,13 @@ a {
 }
 
 .latest-header {
-  background-color: #f6a37c;
+  background-color: #fae5a9;
   margin: 0px 20px 60px 20px;
   height: 300px;
   border-radius: 20px;
+  padding: 30px 0px 0px 30px;
+  font-size: 40px;
+  color: rgb(22, 185, 239);
 }
 
 .salomon-xt-container {
@@ -92,7 +95,11 @@ a {
 }
 
 .salomon-xt-link {
-  background-color: lightpink;
+  background-color: rgb(252, 205, 212);
+  color: rgb(178, 252, 59);
+  text-align: center;
+  padding-top: 30px;
+  font-size: 30px;
 }
 
 .salomon-xt-img {
@@ -178,6 +185,7 @@ a {
   column-gap: 10px;
   padding: 20px;
   margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .product-image {

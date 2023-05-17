@@ -60,7 +60,19 @@ const Polar: FC = () => {
         <div className="store-brand-info">
           <h1 className="brand-name">Polar</h1>
         </div>
-        <div className="brand-description">Polar descritption</div>
+        <div className="brand-description">
+          Immerse yourself in the vibrant world of Polar Skateboards, where
+          skateboarding culture thrives. With a dedication to authenticity and
+          creativity, Polar Skateboards brings you a meticulously crafted
+          collection of skateboarding decks, apparel, and accessories. From
+          their iconic graphics and innovative board designs to their
+          comfortable and stylish clothing range, Polar Skateboards caters to
+          skateboarders and streetwear enthusiasts alike. Whether you're hitting
+          the streets or expressing your unique style, Polar Skateboards offers
+          the perfect blend of quality, functionality, and artistic expression.
+          Discover the thrill of skating with Polar Skateboards and embrace the
+          spirit of individuality on and off the board.
+        </div>
         <div>
           <div className="store-items-container">
             {polarData.map((item) => (

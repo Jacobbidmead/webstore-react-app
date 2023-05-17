@@ -4,16 +4,11 @@ import mainImg from "@/imageData/mainImgData";
 import Link from "next/link";
 
 const MainPage: FC = () => {
-  // const { addToBasket, setSelectedSize, basket, setBasket } =
-  //   useContext(ShopContext);
   return (
     <>
       <div className="mainpage-container">
-        {/* <div className="welcome">
-          <span className="welcome-message">Welcome. </span>
-        </div> */}
         <HomeSwiper images={mainImg} />
-        <span className="latest-header">Featured</span>
+        <span className="latest-header">Featured for you.</span>
         <div className="latest-container">
           <div className="latest-img-container">
             <img
