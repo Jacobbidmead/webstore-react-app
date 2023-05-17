@@ -184,27 +184,27 @@ const PersistentDrawerLeft: FC = () => {
                   </Link>
                 </ListItem>
                 <ListItem disablePadding>
-                  <Link href="/Hoodies" className="product-link">
+                  <Link href="/products/Hoodies" className="product-link">
                     Hoodies
                   </Link>
                 </ListItem>{" "}
                 <ListItem disablePadding>
-                  <Link href="/Jackets" className="product-link">
+                  <Link href="/products/Jackets" className="product-link">
                     Jackets
                   </Link>
                 </ListItem>{" "}
                 <ListItem disablePadding>
-                  <Link href="/Jeans" className="product-link">
+                  <Link href="/products/Jeans" className="product-link">
                     Jeans & Trousers
                   </Link>
                 </ListItem>
                 <ListItem disablePadding>
-                  <Link href="/Hats" className="product-link">
+                  <Link href="/products/Hats" className="product-link">
                     Hats & Beanies
                   </Link>
                 </ListItem>
                 <ListItem disablePadding>
-                  <Link href="/Trainers" className="product-link">
+                  <Link href="/products/Trainers" className="product-link">
                     Trainers
                   </Link>
                 </ListItem>

@@ -2,6 +2,12 @@ import { FC, useContext, useState } from "react";
 import { useRouter } from "next/router";
 import { ShopContext } from "@/context/shop-context";
 import allProdData from "../../data/allProd.json";
+import IconButton from "@mui/material/IconButton";
+import Link from "next/link";
+import Toolbar from "@mui/material/Toolbar";
+import { AppBar } from "@mui/material";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import HomeIcon from "@mui/icons-material/Home";
 
 interface Product {
   id: number;
@@ -31,7 +37,30 @@ const ProductPage: FC = () => {
 
   return (
     <>
-      <div className="store-main-container">
+      <AppBar position="fixed">
+        <Toolbar
+          sx={{
+            // backgroundColor: "#fbfbfbcc",
+            justifyContent: "space-between",
+          }}
+        >
+          <Link href="/">
+            <IconButton component="a">
+              <HomeIcon />
+            </IconButton>
+          </Link>
+
+          <Link href="/BasketPage" className="basket-counter">
+            {basket.length > 0 && (
+              <span className="basket-counter">({basket.length})</span>
+            )}
+            <IconButton>
+              <ShoppingCartIcon sx={{ cursor: "pointer" }} />
+            </IconButton>
+          </Link>
+        </Toolbar>
+      </AppBar>
+      <div>
         <div className="store-brand-info">
           <h1 className="brand-name">{category}</h1>
         </div>

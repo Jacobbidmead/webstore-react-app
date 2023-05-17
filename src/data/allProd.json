@@ -82,7 +82,7 @@
   {
     "id": 1,
     "brand": "Norse Projects",
-    "type": "Jeans & Trousers",
+    "type": "Jeans",
     "name": "Regular Jeans",
     "color": "Blue",
     "size": ["S", "M", "L"],
@@ -92,7 +92,7 @@
   {
     "id": 2,
     "brand": "Norse Projects",
-    "type": "Hats & Beanies",
+    "type": "Hats",
     "name": "Navy Cap",
     "color": "Navy",
     "size": ["One Size"],
@@ -132,7 +132,7 @@
   {
     "id": 2,
     "brand": "Polar",
-    "type": "Jeans & Trousers",
+    "type": "Jeans",
     "name": "Bib Boy Jeans",
     "color": "Light Blue",
     "size": ["S", "M", "L", "XL"],
@@ -152,7 +152,7 @@
   {
     "id": 4,
     "brand": "Polar",
-    "type": "Jeans & Trousers",
+    "type": "Jeans",
     "name": "Big Boy Cords",
     "color": "Dark Blue",
     "size": ["S", "M", "L"],
