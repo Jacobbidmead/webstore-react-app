@@ -55,7 +55,8 @@ a {
 .mainpage-container {
   display: grid;
   grid-template-rows: 0.5fr 0.5fr 0.2fr 1fr;
-  /* background-color: black; */
+
+  background-color: rgb(244, 132, 94);
 }
 
 .latest-container {
@@ -103,6 +104,10 @@ a {
   text-decoration: none;
 }
 
+.product-link:hover {
+  color: white;
+}
+
 /* swiper */
 
 .image-slider {
@@ -119,6 +124,21 @@ a {
   max-width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+.swiper-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.featured {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  margin-top: 10px;
 }
 
 /* Home page */
@@ -139,6 +159,7 @@ a {
 .brand-description {
   font-size: 40px;
   padding: 50px 50px 0px 50px;
+  text-align: center;
 }
 
 .store-brand-info {

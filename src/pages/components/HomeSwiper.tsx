@@ -1,5 +1,7 @@
 import { useState } from "react";
 import mainImg from "@/imageData/mainImgData";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 interface ImageSliderProps {
   images: string[];
@@ -19,15 +21,20 @@ const HomeSwiper: React.FC<ImageSliderProps> = ({ images }) => {
   };
 
   return (
-    <div className="image-slider">
-      <img
-        src={mainImg[currentImageIndex]}
-        alt="slider"
-        className="swiper-img"
-      />
-      <button onClick={previousImage}>Previous</button>
-      <button onClick={nextImage}>Next</button>
-    </div>
+    <>
+      <div className="image-slider">
+        <div className="featured">Latest releases</div>
+        <img
+          src={mainImg[currentImageIndex]}
+          alt="slider"
+          className="swiper-img"
+        />
+        <div className="swiper-buttons">
+          <ArrowBackIcon onClick={previousImage}>Previous</ArrowBackIcon>
+          <ArrowForwardIcon onClick={nextImage}>Next</ArrowForwardIcon>
+        </div>
+      </div>
+    </>
   );
 };
 

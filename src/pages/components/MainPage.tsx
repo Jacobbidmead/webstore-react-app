@@ -9,9 +9,9 @@ const MainPage: FC = () => {
   return (
     <>
       <div className="mainpage-container">
-        <div className="welcome">
-          <span className="welcome-message">Welcome.</span>
-        </div>
+        {/* <div className="welcome">
+          <span className="welcome-message">Welcome. </span>
+        </div> */}
         <HomeSwiper images={mainImg} />
         <span className="latest-header">Latest</span>
         <div className="latest-container">

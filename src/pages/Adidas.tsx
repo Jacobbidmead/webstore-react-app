@@ -38,7 +38,7 @@ const Adidas: FC = () => {
           }}
         >
           <Link href="/">
-            <IconButton component="a">
+            <IconButton>
               <HomeIcon />
             </IconButton>
           </Link>
