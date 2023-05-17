@@ -194,7 +194,7 @@ const PersistentDrawerLeft: FC = () => {
                   </Link>
                 </ListItem>{" "}
                 <ListItem disablePadding>
-                  <Link href="/Trousers" className="product-link">
+                  <Link href="/Jeans" className="product-link">
                     Jeans & Trousers
                   </Link>
                 </ListItem>
