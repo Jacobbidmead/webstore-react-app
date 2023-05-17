@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "brand": "Adidas",
     "type": "Trainers",
     "name": "Superstar",
     "color": "Black/White",
@@ -10,6 +11,7 @@
   },
   {
     "id": 2,
+    "brand": "Adidas",
     "type": "Trainers",
     "name": "Mike Arnold Handball Top Shoe",
     "color": "Core Black/Shadow Navy/Pulse Yellow",
@@ -19,6 +21,7 @@
   },
   {
     "id": 3,
+    "brand": "Adidas",
     "type": "Trainers",
     "name": "Tyshawn Low",
     "color": "Black/Gold Metallic",
@@ -28,6 +31,7 @@
   },
   {
     "id": 4,
+    "brand": "Adidas",
     "type": "Jackets",
     "name": "Tyshawn Puff Jacket",
     "color": "Black/Green",
@@ -37,6 +41,7 @@
   },
   {
     "id": 1,
+    "brand": "Nike",
     "type": "Trainers",
     "name": "Blazer",
     "color": "Summit White/Nightshade",
@@ -46,6 +51,7 @@
   },
   {
     "id": 2,
+    "brand": "Nike",
     "type": "Trainers",
     "name": "Dunk SB",
     "color": "Adobe/Phantom/Gum",
@@ -55,6 +61,7 @@
   },
   {
     "id": 3,
+    "brand": "Nike",
     "type": "Tshirt & Shirts",
     "name": "Globe Guy Tshirt",
     "color": "Grey",
@@ -64,6 +71,7 @@
   },
   {
     "id": 4,
+    "brand": "Nike",
     "type": "Trainers",
     "name": "Janoski OG",
     "color": "Alabaster/Chilli red",
@@ -73,6 +81,7 @@
   },
   {
     "id": 1,
+    "brand": "Norse Projects",
     "type": "Jeans & Trousers",
     "name": "Regular Jeans",
     "color": "Blue",
@@ -82,6 +91,7 @@
   },
   {
     "id": 2,
+    "brand": "Norse Projects",
     "type": "Hats & Beanies",
     "name": "Navy Cap",
     "color": "Navy",
@@ -91,6 +101,7 @@
   },
   {
     "id": 3,
+    "brand": "Norse Projects",
     "type": "Hoodies",
     "name": "Fraser Tab Series Hoodie",
     "color": "Scoria Blue",
@@ -100,6 +111,7 @@
   },
   {
     "id": 4,
+    "brand": "Norse Projects",
     "type": "T-shirts & Shirts",
     "name": "Anton Chequed Flannel Shirt",
     "color": "Tumeric Yellow",
@@ -109,6 +121,7 @@
   },
   {
     "id": 1,
+    "brand": "Polar",
     "type": "T-shirts & Shirts",
     "name": "Spiral Shirt",
     "color": "Black/White",
@@ -118,6 +131,7 @@
   },
   {
     "id": 2,
+    "brand": "Polar",
     "type": "Jeans & Trousers",
     "name": "Bib Boy Jeans",
     "color": "Light Blue",
@@ -127,6 +141,7 @@
   },
   {
     "id": 3,
+    "brand": "Polar",
     "type": "Hoodies",
     "name": "Paul Knit Sweatshirt",
     "color": "Grey",
@@ -136,6 +151,7 @@
   },
   {
     "id": 4,
+    "brand": "Polar",
     "type": "Jeans & Trousers",
     "name": "Big Boy Cords",
     "color": "Dark Blue",
@@ -145,6 +161,7 @@
   },
   {
     "id": 1,
+    "brand": "Salomon",
     "type": "Trainers",
     "name": "Salomon xt-6",
     "color": "Camel",
@@ -154,6 +171,7 @@
   },
   {
     "id": 2,
+    "brand": "Salomon",
     "type": "Trainers",
     "name": "Salomon xt-6",
     "color": "Black/Black/Phantom",
@@ -163,6 +181,7 @@
   },
   {
     "id": 3,
+    "brand": "Salomon",
     "type": "Trainers",
     "name": "Salomon xt-6",
     "color": "White/White/Lunar Rock",
@@ -172,6 +191,7 @@
   },
   {
     "id": 4,
+    "brand": "Salomon",
     "type": "Trainers",
     "name": "Salomon xt-6",
     "color": "Laurel Wreath/Lily Pad/Desert Sage",
