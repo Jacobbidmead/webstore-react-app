@@ -157,7 +157,7 @@ a {
   font-size: 80px;
   padding: 20px;
   text-align: center;
-  background-color: #f6a37c;
+  background-color: #816df0;
   width: 30%;
   margin-left: auto;
   margin-right: auto;
@@ -254,6 +254,11 @@ a {
     width: 100%;
   }
 
+  .store-main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   .store-items-container {
     display: flex;
     flex-direction: column;
@@ -267,5 +272,33 @@ a {
   .mainpage-container {
     display: flex;
     flex-direction: column;
+  }
+
+  .brand-name {
+    font-size: 18px;
+  }
+
+  .brand-description {
+    font-size: 20px;
+  }
+
+  .featured {
+    font-size: 20px;
+  }
+
+  .latest-header {
+    font-size: 10px;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .salomon-xt-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .salomon-xt-link {
+    font-size: 20px;
+    padding-bottom: 30px;
   }
 }

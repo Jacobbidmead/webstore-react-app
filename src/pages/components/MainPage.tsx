@@ -8,7 +8,7 @@ const MainPage: FC = () => {
     <>
       <div className="mainpage-container">
         <HomeSwiper images={mainImg} />
-        <span className="latest-header">Featured for you.</span>
+        <span className="latest-header">Featured</span>
         <div className="latest-container">
           <div className="latest-img-container">
             <img

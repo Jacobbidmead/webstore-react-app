@@ -24,15 +24,15 @@ const ProductPage: FC = () => {
   const router = useRouter();
   const { addToBasket, setSelectedSize, basket } = useContext(ShopContext)!;
 
-  const category = router.query.category;
+  const brand = router.query.brand;
 
   const [selectedSize, setSelectedSizeLocal] = useState("");
 
   let products: Product[] = [];
 
   // Check if the category is defined before filtering the products.
-  if (category) {
-    products = allProdData.filter((product) => product.brand === category);
+  if (brand) {
+    products = allProdData.filter((product) => product.brand === brand);
   }
 
   return (
@@ -62,7 +62,7 @@ const ProductPage: FC = () => {
       </AppBar>
       <div>
         <div className="store-brand-info">
-          <h1 className="brand-name">{category}</h1>
+          <h1 className="brand-name">{brand}</h1>
         </div>
 
         <div>
