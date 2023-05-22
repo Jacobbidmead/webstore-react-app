@@ -24,7 +24,8 @@ interface BasketItem {
 }
 
 const Nike: FC = () => {
-  const { addToBasket, setSelectedSize, basket } = useContext(ShopContext)!;
+  const { addToBasket, setSelectedSize, basket, totalItems } =
+    useContext(ShopContext)!;
 
   const [selectedSize, setSelectedSizeLocal] = useState("");
 
@@ -44,11 +45,7 @@ const Nike: FC = () => {
           </Link>
 
           <Link href="/BasketPage" className="basket-counter">
-            (
-            {basket.length > 0 && (
-              <span className="basket-counter">{basket.length}</span>
-            )}
-            )
+            ({totalItems > 0 && <span>{totalItems}</span>})
             <IconButton>
               <ShoppingCartIcon sx={{ cursor: "pointer" }} />
             </IconButton>

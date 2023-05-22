@@ -89,7 +89,7 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 }));
 
 const PersistentDrawerLeft: FC = () => {
-  const { basket, toggleDarkMode } = useContext(ShopContext)!;
+  const { basket, totalItems } = useContext(ShopContext)!;
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
@@ -122,11 +122,7 @@ const PersistentDrawerLeft: FC = () => {
             </IconButton>
 
             <Link href="/BasketPage" className="basket-counter">
-              (
-              {basket.length > 0 && (
-                <span className="basket-counter">{basket.length}</span>
-              )}
-              )
+              ({totalItems > 0 && <span>{totalItems}</span>})
               <IconButton>
                 <ShoppingCartIcon />
               </IconButton>

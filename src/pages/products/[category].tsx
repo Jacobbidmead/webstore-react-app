@@ -22,7 +22,8 @@ interface Product {
 
 const ProductPage: FC = () => {
   const router = useRouter();
-  const { addToBasket, setSelectedSize, basket } = useContext(ShopContext)!;
+  const { addToBasket, setSelectedSize, basket, totalItems } =
+    useContext(ShopContext)!;
 
   const category = router.query.category;
 
@@ -51,9 +52,7 @@ const ProductPage: FC = () => {
           </Link>
 
           <Link href="/BasketPage" className="basket-counter">
-            {basket.length > 0 && (
-              <span className="basket-counter">({basket.length})</span>
-            )}
+            ({totalItems > 0 && <span>{totalItems}</span>})
             <IconButton>
               <ShoppingCartIcon sx={{ cursor: "pointer" }} />
             </IconButton>

@@ -24,6 +24,7 @@ interface ShopContextValue {
   totalPrice: number;
   setSelectedSize: React.Dispatch<React.SetStateAction<string>>;
   toggleDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
+  totalItems: number;
 }
 
 export const ShopContext = createContext<ShopContextValue | null>(null);
@@ -33,6 +34,7 @@ export const ShopContextProvider: FC<React.PropsWithChildren<{}>> = (props) => {
   const [selectedSize, setSelectedSize] = useState("");
   const [hasInitialized, setHasInitialized] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
+  const [totalItems, setTotalItems] = useState(0);
 
   // Load basket from local storage
   useEffect(() => {
@@ -109,6 +111,11 @@ export const ShopContextProvider: FC<React.PropsWithChildren<{}>> = (props) => {
     }
   };
 
+  useEffect(() => {
+    const total = basket.reduce((sum, item) => sum + item.quantity, 0);
+    setTotalItems(total);
+  }, [basket]);
+
   const totalPrice = basket
     ? basket.reduce((acc, item) => acc + item.product.price, 0)
     : 0;
@@ -126,6 +133,7 @@ export const ShopContextProvider: FC<React.PropsWithChildren<{}>> = (props) => {
     setSelectedSize,
     darkMode,
     toggleDarkMode,
+    totalItems,
   };
 
   return (

@@ -30,7 +30,7 @@ export interface Props {
 }
 
 const Basket: FC<Props> = ({ basket }) => {
-  const { removeFromBasket, totalPrice } = useContext(ShopContext)!;
+  const { removeFromBasket, totalPrice, totalItems } = useContext(ShopContext)!;
 
   return (
     <>
@@ -47,7 +47,7 @@ const Basket: FC<Props> = ({ basket }) => {
             </IconButton>
           </Link>
           <div className="basket-counter">
-            ({basket.length > 0 && <span>{basket.length}</span>})
+            ({totalItems > 0 && <span>{totalItems}</span>})
           </div>
         </Toolbar>
       </AppBar>
