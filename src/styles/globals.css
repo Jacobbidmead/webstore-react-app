@@ -252,6 +252,10 @@ a {
   margin-right: 5em;
 }
 
+.basket-item {
+  padding-top: 40px;
+}
+
 @media screen and (max-width: 601px) {
   .image-slider {
     width: 100%;
