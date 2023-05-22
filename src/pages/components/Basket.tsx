@@ -21,6 +21,7 @@ interface Product {
 interface BasketItem {
   product: Product;
   size: string;
+  quantity: number;
 }
 
 export interface Props {
@@ -57,6 +58,7 @@ const Basket: FC<Props> = ({ basket }) => {
         <div>
           {basket.map((item, index) => (
             <div className="basket-table" key={index}>
+              <div> Quantity: {item.quantity} </div>
               <img className="basket-img" src={item.product.imgUrl} alt="" />
               <div>{item.product.name}</div>
               <div> {item.product.color}</div> {item.size}{" "}

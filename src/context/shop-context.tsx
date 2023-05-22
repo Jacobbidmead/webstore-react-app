@@ -13,6 +13,7 @@ interface Product {
 interface BasketItem {
   product: Product;
   size: string;
+  quantity: number;
 }
 
 interface ShopContextValue {
@@ -66,17 +67,45 @@ export const ShopContextProvider: FC<React.PropsWithChildren<{}>> = (props) => {
 
   const addToBasket = (product: Product) => {
     if (selectedSize !== "" && basket !== null) {
-      const newItem = { product, size: selectedSize };
-      setBasket((prevBasket) => [...prevBasket, newItem]);
+      const existingItem = basket.find(
+        (basketItem) =>
+          basketItem.product.id === product.id &&
+          basketItem.size === selectedSize
+      );
+
+      if (existingItem) {
+        // If the item already exists in the basket, increase its quantity
+        existingItem.quantity += 1;
+        // Trigger a state update by creating a new array (for React to detect the change)
+        setBasket([...basket]);
+      } else {
+        // If the item does not exist in the basket, add it
+        const newItem = { product, size: selectedSize, quantity: 1 };
+        setBasket((prevBasket) => [...prevBasket, newItem]);
+      }
+
       setSelectedSize("");
     }
   };
 
   const removeFromBasket = (item: BasketItem) => {
     if (basket !== null) {
-      setBasket((prevBasket) =>
-        prevBasket.filter((basketItem) => basketItem !== item)
+      let existingItem = basket.find(
+        (basketItem) =>
+          basketItem.product.id === item.product.id &&
+          basketItem.size === item.size
       );
+
+      if (existingItem) {
+        if (existingItem.quantity > 1) {
+          existingItem.quantity -= 1;
+          setBasket([...basket]);
+        } else {
+          setBasket((prevBasket) =>
+            prevBasket.filter((basketItem) => basketItem !== item)
+          );
+        }
+      }
     }
   };
 
