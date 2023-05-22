@@ -79,13 +79,16 @@ a {
 }
 
 .latest-header {
-  background-color: #fae5a9;
-  margin: 0px 20px 60px 20px;
-  height: 300px;
+  display: flex;
+  place-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+  height: 100px;
   border-radius: 20px;
-  padding: 30px 0px 0px 30px;
+
   font-size: 40px;
-  color: rgb(118, 219, 252);
+  text-align: center;
 }
 
 .salomon-xt-container {
@@ -95,8 +98,8 @@ a {
 }
 
 .salomon-xt-link {
-  background-color: rgb(252, 205, 212);
-  color: rgb(178, 252, 59);
+  background-color: rgb(251, 213, 219);
+  color: rgb(91, 93, 96);
   text-align: center;
   padding-top: 30px;
   font-size: 30px;
@@ -287,7 +290,7 @@ a {
   }
 
   .latest-header {
-    font-size: 10px;
+    font-size: 20px;
     text-align: center;
     padding-bottom: 30px;
   }
@@ -298,7 +301,11 @@ a {
   }
 
   .salomon-xt-link {
-    font-size: 20px;
+    font-size: 14px;
     padding-bottom: 30px;
+  }
+
+  .basket-table {
+    font-size: 12px;
   }
 }
