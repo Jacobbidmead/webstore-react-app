@@ -32,7 +32,7 @@ const ProductPage: FC = () => {
 
   // Check if the category is defined before filtering the products.
   if (category) {
-    products = allProdData.filter((product) => product.type === category);
+    products = allProdData.filter((product) => product.brand === category);
   }
 
   return (
