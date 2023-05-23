@@ -348,17 +348,29 @@ a {
 
   .featured {
     font-size: 20px;
+    padding-bottom: 0;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .back-arrow {
+    margin-top: 40px;
+  }
+
+  .forward-arrow {
+    margin-top: 40px;
   }
 
   .latest-header {
     font-size: 20px;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
   }
 
   .salomon-xt-container {
     display: flex;
     flex-direction: column;
+    margin-top: 60px;
   }
 
   .salomon-xt-link {
