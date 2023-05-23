@@ -43,6 +43,10 @@ a {
   box-shadow: none;
 }
 
+.MuiToolbar-root .MuiToolbar-gutters .MuiToolbar-regular .css-1vjr8o2 {
+  background-color: rgba(230, 224, 224, 0.87);
+}
+
 .welcome {
   margin: 90px 20px 0px 20px;
   height: 300px;
@@ -335,7 +339,7 @@ a {
   .latest-header {
     font-size: 20px;
     text-align: center;
-    padding-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   .salomon-xt-container {
