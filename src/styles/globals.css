@@ -43,6 +43,10 @@ a {
   box-shadow: none;
 }
 
+.MuiDrawer-paper {
+  background-color: rgba(160, 227, 204, 0.94) !important;
+}
+
 .welcome {
   margin: 90px 20px 0px 20px;
   height: 300px;

@@ -153,14 +153,12 @@ const PersistentDrawerLeft: FC = () => {
             </IconButton>
           </DrawerHeader>
 
-          <Divider />
           <List>
             <ListItem>
               <Link href="/BasketPage">
                 <span className="product-link">Basket</span>
               </Link>
             </ListItem>
-            <Divider />
 
             <Accordion
               className="accordian"
@@ -247,7 +245,6 @@ const PersistentDrawerLeft: FC = () => {
               </AccordionDetails>
             </Accordion>
           </List>
-          <Divider />
         </Drawer>
         <Main open={open} sx={{ padding: "0" }}>
           <MainPage />
