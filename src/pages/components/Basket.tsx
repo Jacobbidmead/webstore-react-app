@@ -55,7 +55,7 @@ const Basket: FC<Props> = ({ basket }) => {
           <h3>Basket</h3>
         </div>
         <div>
-          {basket.map((item, index) => (
+          {basket?.map((item, index) => (
             <div className="basket-table" key={index}>
               <div className="basket-item"> {item.quantity} </div>
               <img className="basket-img" src={item.product.imgUrl} alt="" />
