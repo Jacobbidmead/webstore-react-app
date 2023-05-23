@@ -66,7 +66,10 @@ const Basket: FC<Props> = ({ basket }) => {
               <div className="basket-item">£{item.product.price}</div>
               <div className="basket-item">
                 {" "}
-                <ClearIcon onClick={() => removeFromBasket(item)}>
+                <ClearIcon
+                  onClick={() => removeFromBasket(item)}
+                  sx={{ cursor: "pointer" }}
+                >
                   Delete
                 </ClearIcon>
               </div>

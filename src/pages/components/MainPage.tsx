@@ -16,6 +16,9 @@ const MainPage: FC = () => {
               alt=""
               className="latest-img"
             />
+            <div className="middle-text">
+              <div>Nike Janoski OG</div>
+            </div>
           </div>
           <div className="latest-img-container">
             {" "}
@@ -24,6 +27,9 @@ const MainPage: FC = () => {
               alt=""
               className="latest-img"
             />
+            <div className="middle-text">
+              <div>Norse Projects Fraser Hoodie</div>
+            </div>
           </div>
           <div className="latest-img-container">
             {" "}
@@ -32,6 +38,9 @@ const MainPage: FC = () => {
               alt=""
               className="latest-img"
             />
+            <div className="middle-text">
+              <div>Salomon XT-6</div>
+            </div>
           </div>
           <div className="latest-img-container">
             {" "}
@@ -40,6 +49,9 @@ const MainPage: FC = () => {
               alt=""
               className="latest-img"
             />
+            <div className="middle-text">
+              <div>Nike Waffle Summit</div>
+            </div>
           </div>
           <div className="latest-img-container">
             <img
@@ -47,6 +59,9 @@ const MainPage: FC = () => {
               alt=""
               className="latest-img"
             />
+            <div className="middle-text">
+              <div>Polar Spiral Shirt</div>
+            </div>
           </div>
           <div className="latest-img-container">
             {" "}
@@ -55,6 +70,9 @@ const MainPage: FC = () => {
               alt=""
               className="latest-img"
             />
+            <div className="middle-text">
+              <div>Polar Big Boy Jeans</div>
+            </div>
           </div>
           <div className="latest-img-container">
             {" "}
@@ -63,6 +81,9 @@ const MainPage: FC = () => {
               alt=""
               className="latest-img"
             />
+            <div className="middle-text">
+              <div>Norse Projects Flannel Shirt</div>
+            </div>
           </div>
           <div className="latest-img-container">
             {" "}
@@ -71,6 +92,9 @@ const MainPage: FC = () => {
               alt=""
               className="latest-img"
             />
+            <div className="middle-text">
+              <div>Norse Proejcts Twill Sports Cap</div>
+            </div>
           </div>
         </div>
         <div className="salomon-xt-container">
