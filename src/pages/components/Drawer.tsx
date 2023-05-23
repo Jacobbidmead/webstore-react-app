@@ -143,7 +143,7 @@ const PersistentDrawerLeft: FC = () => {
           anchor="left"
           open={open}
         >
-          <DrawerHeader>
+          <DrawerHeader sx={{ backgroundColor: "rgba(160, 227, 204, 0.94)" }}>
             <IconButton onClick={handleDrawerClose}>
               {theme.direction === "ltr" ? (
                 <ChevronLeftIcon />

@@ -43,10 +43,6 @@ a {
   box-shadow: none;
 }
 
-.css-1tgyln {
-  background-color: rgba(160, 227, 204, 0.94) !important;
-}
-
 .welcome {
   margin: 90px 20px 0px 20px;
   height: 300px;
@@ -353,6 +349,13 @@ a {
   }
 
   .basket-table {
+    font-size: 12px;
+  }
+  .basket-img {
+    display: none;
+  }
+
+  .basket-total {
     font-size: 12px;
   }
 }
