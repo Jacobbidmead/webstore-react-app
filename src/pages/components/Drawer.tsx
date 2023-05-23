@@ -133,17 +133,17 @@ const PersistentDrawerLeft: FC = () => {
           sx={{
             width: drawerWidth,
             flexShrink: 0,
+            backgroundColor: "rgba(0, 0, 0, 0.87)",
             "& .MuiDrawer-paper": {
               width: drawerWidth,
               boxSizing: "border-box",
-              backgroundColor: "rgba(230, 224, 224, 0.87)",
             },
           }}
           variant="persistent"
           anchor="left"
           open={open}
         >
-          <DrawerHeader sx={{ backgroundColor: "rgba(230, 224, 224, 0.87)" }}>
+          <DrawerHeader>
             <IconButton onClick={handleDrawerClose}>
               {theme.direction === "ltr" ? (
                 <ChevronLeftIcon />
