@@ -5,7 +5,6 @@ import IconButton from "@mui/material/IconButton";
 import Link from "next/link";
 import Toolbar from "@mui/material/Toolbar";
 import { AppBar } from "@mui/material";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import HomeIcon from "@mui/icons-material/Home";
 
 interface Product {
