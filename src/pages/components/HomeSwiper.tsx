@@ -30,8 +30,12 @@ const HomeSwiper: React.FC<ImageSliderProps> = ({ images }) => {
           className="swiper-img"
         />
         <div className="swiper-buttons">
-          <ArrowBackIcon onClick={previousImage}>Previous</ArrowBackIcon>
-          <ArrowForwardIcon onClick={nextImage}>Next</ArrowForwardIcon>
+          <ArrowBackIcon className="back-arrow" onClick={previousImage}>
+            Previous
+          </ArrowBackIcon>
+          <ArrowForwardIcon className="forward-arrow" onClick={nextImage}>
+            Next
+          </ArrowForwardIcon>
         </div>
       </div>
     </>
