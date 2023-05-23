@@ -4,11 +4,7 @@ import { ShopContext } from "@/context/shop-context";
 
 const BasketPage: FC = () => {
   const { basket, setBasket } = useContext(ShopContext)!;
-  return (
-    <>
-      <Basket basket={basket} setBasket={setBasket} />
-    </>
-  );
+  return <>{basket && <Basket basket={basket} setBasket={setBasket} />}</>;
 };
 
 export default BasketPage;
