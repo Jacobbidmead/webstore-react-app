@@ -39,7 +39,7 @@ a {
 
 .MuiAppBar-root {
   box-shadow: none;
-  background-color: rgba(203, 200, 193, 0.5);
+  background-color: rgba(203, 200, 193, 0.5) !important;
   box-shadow: none;
 }
 
