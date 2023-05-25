@@ -40,7 +40,7 @@
     "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/adidas-tyshawn-puff-jacket-black-collegiate-green-1_77eed6c2-ace9-4a0a-9064-994f2627b250_600x696_crop_center.progressive.jpg?v=1636712961"
   },
   {
-    "id": 1,
+    "id": 5,
     "brand": "Nike",
     "type": "Trainers",
     "name": "Blazer",
@@ -50,7 +50,7 @@
     "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/nike-sb-blazer-mid-shoes-summit-white-nightshade-white-1_600x696_crop_center.progressive.jpg?v=1663164414"
   },
   {
-    "id": 2,
+    "id": 6,
     "brand": "Nike",
     "type": "Trainers",
     "name": "Dunk SB",
@@ -60,7 +60,7 @@
     "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/nike-sb-dunk-low-pro-premium-shoes-adobe-adobe-phantom-gum-light-brown--1_600x696_crop_center.progressive.jpg?v=1673520653"
   },
   {
-    "id": 3,
+    "id": 7,
     "brand": "Nike",
     "type": "Tshirts",
     "name": "Globe Guy Tshirt",
@@ -70,7 +70,7 @@
     "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/nike-sb-globe-guy-t-shirt-grey-heather-2_600x696_crop_center.progressive.jpg?v=1683792583"
   },
   {
-    "id": 4,
+    "id": 8,
     "brand": "Nike",
     "type": "Trainers",
     "name": "Janoski OG",
@@ -80,7 +80,7 @@
     "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/nike-sb-janoski-og_-shoes-alabaster-alabaster-chile-red-1_600x696_crop_center.progressive.jpg?v=1679483172"
   },
   {
-    "id": 1,
+    "id": 9,
     "brand": "Norse Projects",
     "type": "Jeans",
     "name": "Regular Jeans",
@@ -90,7 +90,7 @@
     "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/norse-projects-regular-jeans-vintage-indigo-1_480x_crop_center.jpg?v=1660311217"
   },
   {
-    "id": 2,
+    "id": 10,
     "brand": "Norse Projects",
     "type": "Hats",
     "name": "Navy Cap",
@@ -100,7 +100,7 @@
     "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/norse-projects-twill-sports-cap-dark-navy-1_5ad3044e-eefc-4ffc-b11a-9c87eca41906_480x_crop_center.jpg?v=1629718580"
   },
   {
-    "id": 3,
+    "id": 11,
     "brand": "Norse Projects",
     "type": "Hoodies",
     "name": "Fraser Tab Series Hoodie",
@@ -110,7 +110,7 @@
     "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/norse-projects-fraser-tab-series-hoodie-scoria-blue-1_480x_crop_center.jpg?v=1666367230"
   },
   {
-    "id": 4,
+    "id": 12,
     "brand": "Norse Projects",
     "type": "Tshirts",
     "name": "Anton Chequed Flannel Shirt",
@@ -120,7 +120,7 @@
     "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/norse-projects-anton-brushed-flannel-check-shirt-turmeric-yellow-1_480x_crop_center.jpg?v=1666367101"
   },
   {
-    "id": 1,
+    "id": 13,
     "brand": "Polar",
     "type": "Tshirts",
     "name": "Spiral Shirt",
@@ -130,7 +130,7 @@
     "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/polar-spiral-shirt-black-white-1_1300x1500_crop_center.progressive.jpg?v=1676295201"
   },
   {
-    "id": 2,
+    "id": 14,
     "brand": "Polar",
     "type": "Jeans",
     "name": "Bib Boy Jeans",
@@ -140,7 +140,7 @@
     "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/polar-big-boy-jeans-light-blue-3_37c29c94-1093-4f50-bba3-1bded6772014_600x696_crop_center.progressive.jpg?v=1647261599"
   },
   {
-    "id": 3,
+    "id": 15,
     "brand": "Polar",
     "type": "Hoodies",
     "name": "Paul Knit Sweatshirt",
@@ -150,7 +150,7 @@
     "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/polar-paul-knit-sweatshirt-grey-1_600x696_crop_center.progressive.jpg?v=1676295151"
   },
   {
-    "id": 4,
+    "id": 16,
     "brand": "Polar",
     "type": "Jeans",
     "name": "Big Boy Cords",
@@ -160,7 +160,7 @@
     "imgUrl": "https://cdn.shopify.com/s/files/1/1202/6102/products/polar-big-boy-cord-pants-navy-1_600x696_crop_center.progressive.jpg?v=1674466556"
   },
   {
-    "id": 1,
+    "id": 17,
     "brand": "Salomon",
     "type": "Trainers",
     "name": "Salomon xt-6",
@@ -170,7 +170,7 @@
     "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/andwanderxSalomonXT-6Shoes-1_480x_crop_center.jpg?v=1669296832"
   },
   {
-    "id": 2,
+    "id": 18,
     "brand": "Salomon",
     "type": "Trainers",
     "name": "Salomon xt-6",
@@ -180,7 +180,7 @@
     "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/salomon-xt-6-shoes-black-black-phantom-1_480x_crop_center.jpg?v=1626966103"
   },
   {
-    "id": 3,
+    "id": 19,
     "brand": "Salomon",
     "type": "Trainers",
     "name": "Salomon xt-6",
@@ -190,7 +190,7 @@
     "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/salomon-xt-6-shoes-white-white-lunar-rock-1_480x_crop_center.jpg?v=1626966167"
   },
   {
-    "id": 4,
+    "id": 20,
     "brand": "Salomon",
     "type": "Trainers",
     "name": "Salomon xt-6",

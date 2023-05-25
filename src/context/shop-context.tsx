@@ -72,13 +72,14 @@ export const ShopContextProvider: FC<React.PropsWithChildren<{}>> = (props) => {
       const existingItem = basket.find(
         (basketItem) =>
           basketItem.product.id === product.id &&
-          basketItem.size === selectedSize
+          basketItem.size === selectedSize &&
+          basketItem.product === product // added this line
       );
 
       if (existingItem) {
         // If the item already exists in the basket, increase its quantity
         existingItem.quantity += 1;
-        // Trigger a state update by creating a new array (for React to detect the change)
+        // Trigger a state update by creating a new array
         setBasket([...basket]);
       } else {
         // If the item does not exist in the basket, add it
