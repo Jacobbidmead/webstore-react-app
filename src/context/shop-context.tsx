@@ -73,9 +73,8 @@ export const ShopContextProvider: FC<React.PropsWithChildren<{}>> = (props) => {
         (basketItem) =>
           basketItem.product.id === product.id &&
           basketItem.size === selectedSize &&
-          basketItem.product === product // added this line
+          basketItem.product === product
       );
-
       if (existingItem) {
         // If the item already exists in the basket, increase its quantity
         existingItem.quantity += 1;
@@ -86,7 +85,6 @@ export const ShopContextProvider: FC<React.PropsWithChildren<{}>> = (props) => {
         const newItem = { product, size: selectedSize, quantity: 1 };
         setBasket((prevBasket) => [...prevBasket, newItem]);
       }
-
       setSelectedSize("");
     }
   };
@@ -98,7 +96,6 @@ export const ShopContextProvider: FC<React.PropsWithChildren<{}>> = (props) => {
           basketItem.product.id === item.product.id &&
           basketItem.size === item.size
       );
-
       if (existingItem) {
         if (existingItem.quantity > 1) {
           existingItem.quantity -= 1;

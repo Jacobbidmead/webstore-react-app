@@ -167,7 +167,7 @@ a {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 80px;
+
   object-fit: cover;
 }
 
@@ -207,7 +207,8 @@ a {
   display: flex;
   justify-content: center;
   padding-bottom: 65px;
-  margin-top: 55px;
+  padding-top: 120px;
+  background-color: rgba(129, 109, 240, 0.9);
 }
 
 /* Home page */
@@ -320,6 +321,10 @@ a {
     width: 100%;
   }
 
+  .css-63lxgy-MuiDrawer-docked .MuiDrawer-paper {
+    width: 240px;
+  }
+
   .store-main-container {
     display: flex;
     flex-direction: column;
@@ -338,6 +343,7 @@ a {
   .mainpage-container {
     display: flex;
     flex-direction: column;
+    width: 390px;
   }
 
   .brand-name {
@@ -350,9 +356,9 @@ a {
 
   .featured {
     font-size: 20px;
-    padding-bottom: 0;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    padding-bottom: 20px;
+
+    padding-top: 80px;
   }
 
   .back-arrow {

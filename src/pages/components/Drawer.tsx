@@ -7,7 +7,6 @@ import CssBaseline from "@mui/material/CssBaseline";
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
@@ -162,7 +161,10 @@ const PersistentDrawerLeft: FC = () => {
 
             <Accordion
               className="accordian"
-              sx={{ backgroundColor: "rgba(160, 227, 204, 0.94)" }}
+              sx={{
+                backgroundColor: "rgba(160, 227, 204, 0.94)",
+                border: "none",
+              }}
             >
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
@@ -207,7 +209,11 @@ const PersistentDrawerLeft: FC = () => {
 
             <Accordion
               className="accordian"
-              sx={{ backgroundColor: "rgba(160, 227, 204, 0.94)" }}
+              sx={{
+                backgroundColor: "rgba(160, 227, 204, 0.94)",
+                border: "none",
+                boxShadow: "none",
+              }}
             >
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
