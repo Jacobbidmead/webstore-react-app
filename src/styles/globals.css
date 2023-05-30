@@ -130,6 +130,8 @@ a {
   border-radius: 20px;
   font-size: 40px;
   text-align: center;
+  background-color: rgba(160, 227, 204, 0.94);
+  padding: 60px;
 }
 
 .salomon-xt-container {
@@ -144,6 +146,10 @@ a {
   text-align: center;
   padding-top: 30px;
   font-size: 30px;
+}
+
+.salomon-xt-link:hover {
+  color: rgba(160, 227, 204, 0.94);
 }
 
 .salomon-xt-img {
