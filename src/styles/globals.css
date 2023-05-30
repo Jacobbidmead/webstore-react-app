@@ -378,7 +378,8 @@ a {
   .latest-header {
     font-size: 20px;
     text-align: center;
-    margin-bottom: 35px;
+    margin: 10px;
+    padding: 22px;
   }
 
   .salomon-xt-container {
