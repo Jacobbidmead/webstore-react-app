@@ -198,5 +198,41 @@
     "size": ["6", "7", "8", "9", "10"],
     "price": 150,
     "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/salomon-xt-6-shoes-laurel-wreath-lily-pad-desert-sage-1_480x_crop_center.jpg?v=1679649910"
+  },
+  {
+    "id": 1,
+    "type": "Tshirts",
+    "name": "Train long sleeve",
+    "color": "White/Black",
+    "size": ["S", "M", "L", "XL"],
+    "price": 65,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/the-trilogy-tapes-train-long-sleeve-t-shirt-white-1_480x_crop_center.jpg?v=1601647197"
+  },
+  {
+    "id": 1,
+    "type": "Tshirts",
+    "name": "Illuminations long sleeve",
+    "color": "Black/White",
+    "size": ["S", "M", "L", "XL"],
+    "price": 65,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/the-trilogy-tapes-enlarger-illuminations-long-sleeve-t-shirt-black--1_480x_crop_center.jpg?v=1671015855"
+  },
+  {
+    "id": 1,
+    "type": "Tshirts",
+    "name": "Bowling Shirt",
+    "color": "Green",
+    "size": ["S", "M", "L"],
+    "price": 70,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/files/the-trilogy-tapes-ttt-bowling-shirt-green-1_480x_crop_center.jpg?v=1683127641"
+  },
+  {
+    "id": 1,
+    "type": "Tshirts",
+    "name": "Block Tshirt",
+    "color": "Green",
+    "size": ["S", "M", "L", "XL"],
+    "price": 85,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/the-trilogy-tapes-block-t-shirt-green--1_480x_crop_center.jpg?v=1671015846"
   }
 ]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "type": "Tshirt",
+    "name": "Train long sleeve",
+    "color": "White/Black",
+    "size": ["S", "M", "L", "XL"],
+    "price": 65,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/the-trilogy-tapes-train-long-sleeve-t-shirt-white-1_480x_crop_center.jpg?v=1601647197"
+  },
+  {
+    "id": 1,
+    "type": "Tshirt",
+    "name": "Illuminations long sleeve",
+    "color": "Black/White",
+    "size": ["S", "M", "L", "XL"],
+    "price": 65,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/the-trilogy-tapes-enlarger-illuminations-long-sleeve-t-shirt-black--1_480x_crop_center.jpg?v=1671015855"
+  },
+  {
+    "id": 1,
+    "type": "Tshirt",
+    "name": "Bowling Shirt",
+    "color": "Green",
+    "size": ["S", "M", "L"],
+    "price": 70,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/files/the-trilogy-tapes-ttt-bowling-shirt-green-1_480x_crop_center.jpg?v=1683127641"
+  },
+  {
+    "id": 1,
+    "type": "Tshirt",
+    "name": "Block Tshirt",
+    "color": "Green",
+    "size": ["S", "M", "L", "XL"],
+    "price": 85,
+    "imgUrl": "https://cdn.shopify.com/s/files/1/2102/5145/products/the-trilogy-tapes-block-t-shirt-green--1_480x_crop_center.jpg?v=1671015846"
+  }
+]
