@@ -8,6 +8,53 @@ const MainPage: FC = () => {
     <>
       <div className="mainpage-container">
         <HomeSwiper images={mainImg} />
+        <div>Latest Releases</div>
+        <div className="latest-container">
+          {" "}
+          <Link href="/Nike" className="latest-img-container">
+            <img
+              src="https://cdn.shopify.com/s/files/1/1202/6102/products/nike-sb-janoski-og_-shoes-alabaster-alabaster-chile-red-1_600x696_crop_center.progressive.jpg?v=1679483172"
+              alt=""
+              className="latest-img"
+            />
+            <div className="middle-text">
+              <div>Nike Janoski OG</div>
+            </div>
+          </Link>
+          <Link href="/NorseProjects" className="latest-img-container">
+            {" "}
+            <img
+              src="https://cdn.shopify.com/s/files/1/2102/5145/products/norse-projects-fraser-tab-series-hoodie-scoria-blue-1_480x_crop_center.jpg?v=1666367230"
+              alt=""
+              className="latest-img"
+            />
+            <div className="middle-text">
+              <div>Norse Projects Fraser Hoodie</div>
+            </div>
+          </Link>
+          <Link href="/Salomon" className="latest-img-container">
+            {" "}
+            <img
+              src="https://cdn.shopify.com/s/files/1/2102/5145/products/andwanderxSalomonXT-6Shoes-1_1200x_crop_center.progressive.jpg?v=1669296832"
+              alt=""
+              className="latest-img"
+            />
+            <div className="middle-text">
+              <div>Salomon XT-6</div>
+            </div>
+          </Link>
+          <Link href="/Nike" className="latest-img-container">
+            {" "}
+            <img
+              src="https://cdn.shopify.com/s/files/1/2102/5145/products/nike-waffle-one-shoes-summit-white-white-black-orange-1_480x_crop_center.jpg?v=1641891223"
+              alt=""
+              className="latest-img"
+            />
+            <div className="middle-text">
+              <div>Nike Waffle Summit</div>
+            </div>
+          </Link>
+        </div>
         <span className="latest-header">Featured</span>
         <div className="latest-container">
           <Link href="/Nike" className="latest-img-container">

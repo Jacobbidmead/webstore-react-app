@@ -229,6 +229,11 @@ const PersistentDrawerLeft: FC = () => {
                   </Link>
                 </ListItem>
                 <ListItem disablePadding>
+                  <Link href="/Adidas" className="product-link">
+                    Aries
+                  </Link>
+                </ListItem>
+                <ListItem disablePadding>
                   <Link href="/Polar" className="product-link">
                     Polar
                   </Link>

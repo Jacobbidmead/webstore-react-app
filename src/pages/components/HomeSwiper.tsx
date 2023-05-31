@@ -23,7 +23,7 @@ const HomeSwiper: React.FC<ImageSliderProps> = ({ images }) => {
   return (
     <>
       <div className="image-slider">
-        <div className="featured">Latest releases</div>
+        <div className="featured">Welcome</div>
         <img
           src={mainImg[currentImageIndex]}
           alt="slider"
