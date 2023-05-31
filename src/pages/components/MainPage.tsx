@@ -24,7 +24,7 @@ const MainPage: FC = () => {
     <>
       <div className="mainpage-container">
         <HomeSwiper images={mainImg} />
-        <div>The Trilogy Tapes</div>
+        <div className="latest-header">The Trilogy Tapes</div>
         <div className="latest-container">
           {" "}
           {trilogyData.map((item) => (
@@ -40,7 +40,9 @@ const MainPage: FC = () => {
             </Link>
           ))}
         </div>
+
         <span className="latest-header">Featured</span>
+
         <div className="latest-container">
           <Link href="/Nike" className="latest-img-container">
             <img

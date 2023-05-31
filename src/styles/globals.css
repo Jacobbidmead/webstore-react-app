@@ -115,8 +115,6 @@ a {
 }
 
 .latest-header {
-  display: flex;
-  place-items: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
@@ -126,7 +124,9 @@ a {
   font-size: 40px;
   text-align: center;
   background-color: rgba(160, 227, 204, 0.94);
-  padding: 60px;
+  padding: 20px 500px 10px 500px;
+
+  border: 1px solid black;
 }
 
 .salomon-xt-container {
@@ -136,8 +136,8 @@ a {
 }
 
 .salomon-xt-link {
-  background-color: rgba(129, 109, 240, 0.9);
-  color: white;
+  color: rgba(129, 109, 240, 0.9);
+  background-color: black;
   text-align: center;
   padding-top: 30px;
   font-size: 30px;
@@ -175,6 +175,7 @@ a {
   max-width: 100%;
   height: auto;
   object-fit: cover;
+  border: 1px solid black;
 }
 
 .swiper-buttons {
@@ -205,12 +206,10 @@ a {
 .featured {
   font-size: 30px;
   display: flex;
-  justify-content: center;
   padding-bottom: 65px;
   padding-top: 120px;
-  background-color: rgba(31, 126, 10, 0.8);
+  background-color: rgba(129, 109, 240, 0.7);
   height: 700px;
-  margin-bottom: 100px;
 }
 
 /* Home page */
@@ -338,8 +337,11 @@ a {
   }
 
   .latest-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .featured {
+    height: 600px;
   }
 
   .mainpage-container {
@@ -359,16 +361,16 @@ a {
   .featured {
     font-size: 20px;
     padding-bottom: 20px;
-
     padding-top: 80px;
+    margin-bottom: 20px;
   }
 
   .back-arrow {
-    margin-top: 140px;
+    margin-top: 100px;
   }
 
   .forward-arrow {
-    margin-top: 140px;
+    margin-top: 100px;
   }
 
   .latest-header {
