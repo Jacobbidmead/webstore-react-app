@@ -229,11 +229,6 @@ const PersistentDrawerLeft: FC = () => {
                   </Link>
                 </ListItem>
                 <ListItem disablePadding>
-                  <Link href="/Trilogy" className="product-link">
-                    Trilogy Tapes
-                  </Link>
-                </ListItem>
-                <ListItem disablePadding>
                   <Link href="/Polar" className="product-link">
                     Polar
                   </Link>
@@ -251,6 +246,11 @@ const PersistentDrawerLeft: FC = () => {
                 <ListItem disablePadding>
                   <Link href="/Salomon" className="product-link">
                     Salomon
+                  </Link>
+                </ListItem>
+                <ListItem disablePadding>
+                  <Link href="/Trilogy" className="product-link">
+                    Trilogy Tapes
                   </Link>
                 </ListItem>
               </AccordionDetails>

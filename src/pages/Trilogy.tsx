@@ -55,7 +55,7 @@ const Trilogy: FC = () => {
 
       <div className="store-main-container">
         <div className="store-brand-info">
-          <h1 className="brand-name">Nike</h1>
+          <h1 className="brand-name">The Trilogy Tapes</h1>
         </div>
         <div className="brand-description">
           A record label come graphic-centered clothing line launched in 2008 by

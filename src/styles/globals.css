@@ -223,18 +223,18 @@ a {
 /* Store pages */
 
 .brand-name {
-  font-size: 80px;
+  font-size: 60px;
   padding: 20px;
   text-align: center;
   background-color: #816df0;
-  width: 30%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 80px;
+  border-radius: 10px;
 }
 
 .brand-description {
-  font-size: 40px;
+  font-size: 20px;
   padding: 50px 50px 0px 50px;
   text-align: center;
 }
@@ -245,7 +245,7 @@ a {
 
 .store-main-container {
   display: grid;
-  grid-template-rows: 0.5fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 1fr;
 }
 
 .store-items-container {
