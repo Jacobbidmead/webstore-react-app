@@ -201,6 +201,7 @@
   },
   {
     "id": 1,
+    "brand": "Trilogy",
     "type": "Tshirts",
     "name": "Train long sleeve",
     "color": "White/Black",
@@ -210,6 +211,7 @@
   },
   {
     "id": 2,
+    "brand": "Trilogy",
     "type": "Tshirts",
     "name": "Illuminations long sleeve",
     "color": "Black/White",
@@ -219,6 +221,7 @@
   },
   {
     "id": 3,
+    "brand": "Trilogy",
     "type": "Tshirts",
     "name": "Bowling Shirt",
     "color": "Green",
@@ -228,6 +231,7 @@
   },
   {
     "id": 4,
+    "brand": "Trilogy",
     "type": "Tshirts",
     "name": "Block Tshirt",
     "color": "Green",
