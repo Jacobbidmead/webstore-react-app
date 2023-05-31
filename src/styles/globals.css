@@ -30,8 +30,7 @@ button {
 /* Home page */
 
 .accordian {
-  border: none;
-  box-shadow: none;
+  box-shadow: none !important;
 }
 
 a {

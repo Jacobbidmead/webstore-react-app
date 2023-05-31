@@ -135,14 +135,14 @@ const PersistentDrawerLeft: FC = () => {
             "& .MuiDrawer-paper": {
               width: drawerWidth,
               boxSizing: "border-box",
-              backgroundColor: "rgba(160, 227, 204, 0.94)",
+              backgroundColor: "rgb(160, 227, 204)",
             },
           }}
           variant="persistent"
           anchor="left"
           open={open}
         >
-          <DrawerHeader sx={{ backgroundColor: "rgba(160, 227, 204, 0.94)" }}>
+          <DrawerHeader sx={{ backgroundColor: "rgb(160, 227, 204)" }}>
             <IconButton onClick={handleDrawerClose}>
               {theme.direction === "ltr" ? (
                 <ChevronLeftIcon />
@@ -162,8 +162,9 @@ const PersistentDrawerLeft: FC = () => {
             <Accordion
               className="accordian"
               sx={{
-                backgroundColor: "rgba(160, 227, 204, 0.94)",
-                border: "none",
+                backgroundColor: "rgb(160, 227, 204)",
+                border: "none !important",
+                boxShadow: "none !important",
               }}
             >
               <AccordionSummary
@@ -210,9 +211,13 @@ const PersistentDrawerLeft: FC = () => {
             <Accordion
               className="accordian"
               sx={{
-                backgroundColor: "rgba(160, 227, 204, 0.94)",
-                border: "none",
-                boxShadow: "none",
+                backgroundColor: "rgba(160, 227, 204)",
+                border: "none !important",
+                boxShadow: "none !important",
+                "&:before": {
+                  display: "none",
+                },
+                paddingTop: "10px",
               }}
             >
               <AccordionSummary
