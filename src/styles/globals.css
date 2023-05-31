@@ -206,10 +206,11 @@ a {
 .featured {
   font-size: 30px;
   display: flex;
-  padding-bottom: 65px;
+  color: white;
   padding-top: 120px;
   background-color: rgba(129, 109, 240, 0.7);
   height: 700px;
+  padding: 600px 0px 0px 60px;
 }
 
 /* Home page */
@@ -359,10 +360,9 @@ a {
   }
 
   .featured {
-    font-size: 20px;
-    padding-bottom: 20px;
-    padding-top: 80px;
-    margin-bottom: 20px;
+    font-size: 13px;
+    padding-bottom: 76px;
+    padding-left: 33px;
   }
 
   .back-arrow {
