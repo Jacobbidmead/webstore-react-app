@@ -3,6 +3,7 @@ import HomeSwiper from "./HomeSwiper";
 import mainImg from "@/imageData/mainImgData";
 import Link from "next/link";
 import trilogyData from "../../data/trilogyProd.json";
+import salomonData from "../../data/salomonProd.json";
 
 interface Product {
   id: number;
@@ -132,9 +133,6 @@ const MainPage: FC = () => {
           </Link>
         </div>
         <div className="salomon-xt-container">
-          <Link href="/Salomon" className="latest-header">
-            Salomon XT-6 - Shop now
-          </Link>
           <div>
             <img
               src="https://cdn.shopify.com/s/files/1/2102/5145/files/salomon-xt6-gtx-desktop-banner_1_1200x1800.jpg?v=1672992137"
@@ -142,6 +140,24 @@ const MainPage: FC = () => {
               className="salomon-xt-img"
             />
           </div>
+          <Link href="/Salomon" className="latest-header">
+            Salomon
+          </Link>
+        </div>
+        <div className="latest-container">
+          {" "}
+          {salomonData.map((item) => (
+            <Link
+              href="/Salomon"
+              className="latest-img-container"
+              key={item.id}
+            >
+              <img src={item.imgUrl} alt="" className="latest-img" />
+              <div className="middle-text">
+                <div>{item.color}</div>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
     </>

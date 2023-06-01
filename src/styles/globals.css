@@ -124,12 +124,13 @@ a {
   border: 1px solid black;
   width: 1000px;
   padding-top: 15px;
+  color: black;
 }
 
 .salomon-xt-container {
-  /* display: grid;
-  grid-template-columns: 2fr 1fr; */
-  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
 }
 
 .salomon-xt-img {
@@ -276,7 +277,6 @@ a {
 
 .basket-container {
   padding-top: 80px;
-
   height: 100vh;
 }
 
@@ -370,7 +370,6 @@ a {
   .salomon-xt-container {
     display: flex;
     flex-direction: column;
-    margin-top: 0px;
   }
 
   .salomon-xt-link {
