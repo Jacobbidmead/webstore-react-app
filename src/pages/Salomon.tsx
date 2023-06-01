@@ -40,7 +40,7 @@ const Salomon: FC = () => {
           </Link>
 
           <Link href="/BasketPage" className="basket-counter">
-            ({totalItems > 0 && <span>{totalItems}</span>})
+            {totalItems > 0 && <span>({totalItems})</span>}
             <IconButton>
               <ShoppingCartIcon sx={{ cursor: "pointer" }} />
             </IconButton>

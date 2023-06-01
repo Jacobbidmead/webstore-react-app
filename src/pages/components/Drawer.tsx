@@ -121,7 +121,7 @@ const PersistentDrawerLeft: FC = () => {
             </IconButton>
 
             <Link href="/BasketPage" className="basket-counter">
-              ({totalItems > 0 && <span>{totalItems}</span>})
+              {totalItems > 0 && <span>({totalItems})</span>}
               <IconButton>
                 <ShoppingCartIcon />
               </IconButton>

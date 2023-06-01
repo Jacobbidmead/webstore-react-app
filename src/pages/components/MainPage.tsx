@@ -132,6 +132,9 @@ const MainPage: FC = () => {
           </Link>
         </div>
         <div className="salomon-xt-container">
+          <Link href="/Salomon" className="latest-header">
+            Salomon XT-6 - Shop now
+          </Link>
           <div>
             <img
               src="https://cdn.shopify.com/s/files/1/2102/5145/files/salomon-xt6-gtx-desktop-banner_1_1200x1800.jpg?v=1672992137"
@@ -139,9 +142,6 @@ const MainPage: FC = () => {
               className="salomon-xt-img"
             />
           </div>
-          <Link href="/Salomon" className="salomon-xt-link">
-            Salomon XT-6 - Shop now
-          </Link>
         </div>
       </div>
     </>

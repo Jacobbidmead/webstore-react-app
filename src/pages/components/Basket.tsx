@@ -46,7 +46,7 @@ const Basket: FC<Props> = ({ basket }) => {
             </IconButton>
           </Link>
           <div className="basket-counter">
-            ({totalItems > 0 && <span>{totalItems}</span>})
+            {totalItems > 0 && <span>({totalItems})</span>}
           </div>
         </Toolbar>
       </AppBar>
