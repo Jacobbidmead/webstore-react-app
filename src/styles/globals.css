@@ -65,6 +65,14 @@ a {
   position: relative;
 }
 
+.salomon-xt-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 80px;
+  position: relative;
+}
+
 .latest-img {
   width: 100%;
   border-radius: 8px;
@@ -72,6 +80,16 @@ a {
   display: block;
   width: 100%;
   height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  cursor: pointer;
+}
+
+.salomon-xt-img {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  display: block;
   transition: 0.5s ease;
   backface-visibility: hidden;
   cursor: pointer;
@@ -103,6 +121,14 @@ a {
   opacity: 1;
 }
 
+.salomon-xt-container:hover .salomon-xt-image {
+  opacity: 0.3;
+}
+
+.salomon-xt-image:hover .middle-text {
+  opacity: 1;
+}
+
 .text {
   background-color: #04aa6d;
   color: white;
@@ -121,17 +147,6 @@ a {
   width: 1000px;
   padding-top: 15px;
   color: black;
-}
-
-.salomon-xt-container {
-  display: flex;
-  flex-direction: column;
-  margin-top: 80px;
-}
-
-.salomon-xt-img {
-  width: 100%;
-  height: 100%;
 }
 
 .product-link {

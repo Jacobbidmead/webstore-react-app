@@ -120,6 +120,7 @@ const MainPage: FC = () => {
               <div>Norse Projects Flannel Shirt</div>
             </div>
           </Link>
+
           <Link href="/NorseProjects" className="latest-img-container">
             {" "}
             <img
@@ -132,6 +133,7 @@ const MainPage: FC = () => {
             </div>
           </Link>
         </div>
+
         <div className="salomon-xt-container">
           <div>
             <img
@@ -139,7 +141,11 @@ const MainPage: FC = () => {
               alt=""
               className="salomon-xt-img"
             />
+            <div className="middle-text">
+              <div>Salomon</div>
+            </div>
           </div>
+
           <Link href="/Salomon" className="latest-header">
             Salomon
           </Link>
@@ -158,6 +164,12 @@ const MainPage: FC = () => {
               </div>
             </Link>
           ))}
+        </div>
+        <div className="footer">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </div>
     </>

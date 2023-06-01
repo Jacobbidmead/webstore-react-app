@@ -6,14 +6,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 interface ImageSliderProps {
   images: string[];
 }
-const colors = [
-  "#FFC0CB",
-  "#FFDAB9",
-  "#FFFFE0",
-  "#E0FFFF",
-  "#D8BFD8",
-  "#0094d0",
-];
+const colors = ["#FFC0CB", "#FFDAB9", "#FFFFE0", "#E0FFFF", "#D8BFD8"];
 
 const HomeSwiper: React.FC<ImageSliderProps> = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
