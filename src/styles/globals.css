@@ -30,7 +30,7 @@ a {
 
 .MuiAppBar-root {
   box-shadow: none;
-  background-color: rgba(203, 200, 193, 0.5) !important;
+  background-color: rgba(203, 200, 193, 0.1) !important;
   box-shadow: none;
 }
 
@@ -87,11 +87,12 @@ a {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
   background-color: rgba(129, 109, 240, 0.9);
-  border-radius: 50px;
+  border-radius: 10px;
   padding: 10px;
   cursor: pointer;
   font-size: 10px;
   color: black;
+  border: solid 1px black;
 }
 
 .latest-img-container:hover .latest-image {
@@ -313,8 +314,8 @@ a {
   }
 
   .store-items-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .latest-container {
@@ -336,7 +337,7 @@ a {
   }
 
   .brand-description {
-    font-size: 20px;
+    font-size: 10px;
   }
 
   .featured {
