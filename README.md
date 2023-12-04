@@ -77,5 +77,5 @@ Improvements and future plans
   
 
 
-- Encourage users to explore the application, provide feedback, and contribute to its development.
+
 
