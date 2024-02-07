@@ -124,7 +124,7 @@ const MainPage: FC = () => {
           <Link href="/NorseProjects" className="latest-img-container">
             {" "}
             <img
-              src="https://cdn.shopify.com/s/files/1/2102/5145/products/norse-projects-twill-sports-cap-dark-navy-1_5ad3044e-eefc-4ffc-b11a-9c87eca41906_480x_crop_center.jpg?v=1629718580"
+              src="https://cdn.shopify.com/s/files/1/2102/5145/files/norse-projects-twill-sports-cap-dark-navy-1_500x583.jpg?v=1690295730"
               alt=""
               className="latest-img"
             />
